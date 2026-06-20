@@ -19,17 +19,18 @@ header p{font-size:1rem;opacity:.85}
 .subtitle{font-size:.85rem;opacity:.65;margin-top:10px}
 #s-index{min-height:100dvh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:24px 20px;scroll-snap-align:start;background:var(--surface)}
 #s-index h2{font-family:'Amiri',serif;color:var(--primary);font-size:2rem;margin-bottom:16px}
-.index-list{list-style:none;padding:0;display:flex;flex-wrap:wrap;justify-content:center;gap:8px;max-width:600px;margin:0 auto;overflow-y:auto;max-height:70dvh;padding:8px 0}
-.index-list a{display:inline-block;background:var(--accent-light);color:var(--primary);text-decoration:none;padding:8px 18px;border-radius:24px;font-size:.9rem;border:1px solid transparent;transition:all .2s}
+.index-list{list-style:none;padding:0;display:flex;flex-wrap:wrap;justify-content:center;gap:8px;max-width:650px;margin:0 auto;overflow-y:auto;max-height:70dvh;padding:8px 0}
+.index-list a{display:inline-block;background:var(--accent-light);color:var(--primary);text-decoration:none;padding:8px 16px;border-radius:24px;font-size:.85rem;border:1px solid transparent;transition:all .2s;text-align:center}
 .index-list a:hover{background:var(--primary);color:#fff}
-.snap-section{min-height:100dvh;display:flex;flex-direction:column;justify-content:flex-start;padding:5dvh 20px 20px;scroll-snap-align:start;box-sizing:border-box;background:var(--surface);border-top:1px solid var(--border)}
-.snap-section h2{font-family:'Amiri',serif;color:var(--primary);font-size:1.6rem;border-bottom:2px solid var(--accent);padding-bottom:10px;margin-bottom:12px;flex-shrink:0}
-.snap-section .lyrics{font-size:1.15rem;line-height:2.4;white-space:pre-line;flex:1;overflow-y:auto;min-height:0;padding:4px 0}
-.snap-section .back-link{flex-shrink:0;margin-top:8px;font-size:.8rem;color:var(--accent)}
-.snap-section .back-link a{color:var(--accent);text-decoration:none}
+.snap-section{min-height:100dvh;display:flex;flex-direction:column;justify-content:flex-start;padding:5dvh 20px 16px;scroll-snap-align:start;box-sizing:border-box;background:var(--surface);border-top:1px solid var(--border)}
+.snap-section h2{font-family:'Amiri',serif;color:var(--primary);font-size:1.4rem;border-bottom:2px solid var(--accent);padding-bottom:10px;margin-bottom:12px;flex-shrink:0;line-height:1.5}
+.snap-section .lyrics{font-size:1.1rem;line-height:2.4;white-space:pre-line;flex:1;overflow-y:auto;min-height:0;padding:4px 0}
+.back-link{flex-shrink:0;margin-top:10px;padding:10px 0;border-top:1px solid var(--border);display:flex;justify-content:center;gap:16px}
+.back-link a{color:var(--primary);text-decoration:none;font-size:.9rem;font-weight:500;padding:8px 20px;background:var(--accent-light);border-radius:24px;transition:all .2s}
+.back-link a:hover{background:var(--primary);color:#fff}
 footer{min-height:20dvh;display:flex;flex-direction:column;justify-content:center;align-items:center;background:#1e1a13;color:#b3a68b;text-align:center;padding:24px;scroll-snap-align:end;border-top:3px solid var(--accent);font-size:.85rem}
 footer a{color:var(--accent);text-decoration:none}
-@media(max-width:600px){header h1{font-size:1.8rem}.snap-section .lyrics{font-size:1rem;line-height:2.2}}
+@media(max-width:600px){header h1{font-size:1.8rem}.snap-section .lyrics{font-size:1rem;line-height:2.2}.snap-section h2{font-size:1.2rem}}
 </style>
 </head>
 <body>
@@ -42,79 +43,79 @@ footer a{color:var(--accent);text-decoration:none}
 <section id="s-index">
 <h2>📖 الفهرس</h2>
 <ul class="index-list">
-<li><a href="#s-01">مقطع 1 — إفـادة بقـات مــا ليــك هــو هــا</a></li>
-<li><a href="#s-02">مقطع 2 — أشـــرار تـلـهــب قـلـبـه ف الـنـار جـانـا مـن يـا</a></li>
-<li><a href="#s-03">مقطع 3 — تربينـــــــــا الخير وف ناس والد احنا راه</a></li>
-<li><a href="#s-04">مقطع 4 — ََيْت َال جرحك وعدي يا الگلب ف شگة يا</a></li>
-<li><a href="#s-05">مقطع 5 — المحـــال من الحال ودوام فرحان مرة . . . حزين مرة</a></li>
-<li><a href="#s-06">مقطع 6 — َْس لـــــ َْبــــ ِْف يــــ ِع يْش ِتــــي ْْنَ…</a></li>
-<li><a href="#s-07">مقطع 7 — ْالَألْد َيا ُو َكثْـَرة واحد بنادم ف حيرتي يا</a></li>
-<li><a href="#s-08">مقطع 8 — رماني غدره ياك رفيق نحسبه واللي</a></li>
-<li><a href="#s-09">مقطع 9 — ْْكِفيــــ ْالّش ْر عَـــاد ْدْلُه ــ ْو ْقْبْلن…</a></li>
-<li><a href="#s-10">مقطع 10 — عارفينو راكم جرى واللي</a></li>
-<li><a href="#s-11">مقطع 11 — غادي وين اهلل يعلم سامحوني</a></li>
-<li><a href="#s-12">مقطع 12 — دايزة الصبيان دموع َْلْبُح و َ</a></li>
-<li><a href="#s-13">مقطع 13 — أاللي بكم عدياني</a></li>
-<li><a href="#s-14">مقطع 14 — يربـــــــا يومك ف وال شغلك ضاع</a></li>
-<li><a href="#s-15">مقطع 15 — الـــشـــــــوم أيــام ف تـولـي كالـلـفـعـى</a></li>
-<li><a href="#s-16">مقطع 16 — حد يبغي حد عاد ما</a></li>
-<li><a href="#s-17">مقطع 17 — واه الــعــــــربـــــي خــــــــويـــــــــا</a></li>
-<li><a href="#s-18">مقطع 18 — وحدي هايم مشيت الســــــوال حر ْعَظ اَيا ف وشعلوا</a></li>
-<li><a href="#s-19">مقطع 19 — تَـلْـِگيِني بالنبي ربي يا فيك غير ورجايا آه</a></li>
-<li><a href="#s-20">مقطع 20 — َالعلَّـــ ْهَـــــــا َْزَّو خيـــي حر كنت وإلى</a></li>
-<li><a href="#s-21">مقطع 21 — حال يدوب ما</a></li>
-<li><a href="#s-22">مقطع 22 — رفـيـق الــــغــــيــــوان احــــبــاب يـــــا</a></li>
-<li><a href="#s-23">مقطع 23 — حـــــد نـلـوم أنـا نـقـد ما</a></li>
-<li><a href="#s-24">مقطع 24 — مرسومة لوجاه عل الطاغي ويد خويا</a></li>
-<li><a href="#s-25">مقطع 25 — له قولو خر لال قولو لــــه قولو هذاك ْ  قُو ُلو</a></li>
-<li><a href="#s-26">مقطع 26 — القيامـة من خفتي ما يــاكــرامــة لمــاذا</a></li>
-<li><a href="#s-27">مقطع 27 — بالفرحة دروبنا يضوي الزين واألمل</a></li>
-<li><a href="#s-28">مقطع 28 — وعــــالش بير في الحوه ظنه الخيـــــــــر ليه بغا</a></li>
-<li><a href="#s-29">مقطع 29 — َْلْفَراِويـــ الساكنيــن لعــراب والد وايـا</a></li>
-<li><a href="#s-30">مقطع 30 — َْض اسَــــــ يگولو يشوفوك ال رجليك ثبت</a></li>
-<li><a href="#s-31">مقطع 31 — ٌَط ـــِويـــــ</a></li>
-<li><a href="#s-32">مقطع 32 — لـــوطـــان عز يا بحبك تـــــنـــــــــادي أوالدك</a></li>
-<li><a href="#s-33">مقطع 33 — وخلينـي سير غير ناللي الفقايص بين</a></li>
-<li><a href="#s-34">مقطع 34 — مـرمـيـة عجــــوزة الطرقـان بين وساحت</a></li>
-<li><a href="#s-35">مقطع 35 — صابغ يا واعطف عبــــــــدك ب َْم اْل َيا ارفق</a></li>
-<li><a href="#s-36">مقطع 36 — عاليلـــــــــي كامي وانا حســـــــــــاب بال مد…</a></li>
-<li><a href="#s-37">مقطع 37 — خودونـــــــي غير هلل . . . ُخ وُد وِني ْغي</a></li>
-<li><a href="#s-38">مقطع 38 — َلْح جـِــــــي</a></li>
-<li><a href="#s-39">مقطع 39 — حــالــ ف غــادي</a></li>
-<li><a href="#s-40">مقطع 40 — َْلَّت غْــَرا ظهرو اعطى ِْتِّلي هو من يا</a></li>
-<li><a href="#s-41">مقطع 41 — الغربــــــة ُو ليعـــــــة الغربـة ف تلومونا ال</a></li>
-<li><a href="#s-42">مقطع 42 — السايل الدم يا</a></li>
-<li><a href="#s-43">مقطع 43 — فــــــيـــــــه</a></li>
-<li><a href="#s-44">مقطع 44 — الگـول ف َتْش َهْرِني لعلى عالم يا</a></li>
-<li><a href="#s-45">مقطع 45 — وعاد النعمة..ما ال مـرهــــــوب گـفــــــا الحـــق</a></li>
-<li><a href="#s-46">مقطع 46 — مـردومـيـــن لـكـواخ عـالـيــة الـعـمـارات</a></li>
-<li><a href="#s-47">مقطع 47 — العبــــاد عـــــل هذا</a></li>
-<li><a href="#s-48">مقطع 48 — لغدر ب توشمات الخاوة حزان شلى</a></li>
-<li><a href="#s-49">مقطع 49 — هاجو فاتو ما هايجين مواجه ب لبحر الداخل يا</a></li>
-<li><a href="#s-50">مقطع 50 — ؟ َقاَم ة ْ  ْْو ْنْم ِْدي َْو ا</a></li>
-<li><a href="#s-51">مقطع 51 — ْ  الُخ و َيا يـعـشــــاق بــــاقــــــي مـــــا</a></li>
-<li><a href="#s-52">مقطع 52 — قاضي عليه ولقهر الخوف</a></li>
-<li><a href="#s-53">مقطع 53 — تما جرادها وفرخت حطت الطبقـات فوگ راسها رسات طبقة</a></li>
-<li><a href="#s-54">مقطع 54 — آَعُّلوَلة وطال لغدر طال</a></li>
-<li><a href="#s-55">مقطع 55 — اهلل اهلل اهلل</a></li>
-<li><a href="#s-56">مقطع 56 — ْْنـعِــيــــ وشــانــــك بـخـيـــــل أصـلــك</a></li>
-<li><a href="#s-57">مقطع 57 — يرفرف عالمي</a></li>
-<li><a href="#s-58">مقطع 58 — ْلْع ِش َّية َْم َْلْزَو َْو الَّراْي</a></li>
-<li><a href="#s-59">مقطع 59 — َبــاَبــا أَ ْالظْـــَال ْْقْنِد يـــ</a></li>
-<li><a href="#s-60">مقطع 60 — العَــــــــــــْو َدة ْمُـــــــو يَــــــا آه</a></li>
-<li><a href="#s-61">مقطع 61 — الحجر گلوب يا المعبود الصنك عبيد</a></li>
-<li><a href="#s-62">مقطع 62 — جـــيـبـــــــوا الــبــيـــــضــــا الـطيــــــور</a></li>
-<li><a href="#s-63">مقطع 63 — بالقــاعـدة شي كل َْكا القدام وَخ ْط َو ة ْالُّل…</a></li>
-<li><a href="#s-64">مقطع 64 — العدوان وطول الغربة طول ...َفا َيا َح ْيَفا َيا</a></li>
-<li><a href="#s-65">مقطع 65 — ســـحــــابـــــي ْْم ْكّْح خوتي عذاب</a></li>
-<li><a href="#s-66">مقطع 66 — ْْط ِبي ْْتْرْج ُم وَكة َْكا ْوَل</a></li>
-<li><a href="#s-67">مقطع 67 — َْفاْينُــــ ْْش ْغ ْل َو اْيلِـــي</a></li>
-<li><a href="#s-68">مقطع 68 — َْو اْقَفا ُج وَبى ْص ْي ُد و النبي واصحاب</a></li>
-<li><a href="#s-69">مقطع 69 — الغيوان ناس أغاني »</a></li>
+<li><a href="#s-01">إفـادة بقـات مــا ليــك هــو هــا</a></li>
+<li><a href="#s-02">أشـــرار تـلـهــب قـلـبـه ف الـنـار جـانـا مـن يـا</a></li>
+<li><a href="#s-03">تربينـــــــــا الخير وف ناس والد احنا راه</a></li>
+<li><a href="#s-04">يت ال جرحك وعدي يا الگلب ف شگة يا</a></li>
+<li><a href="#s-05">المحـــال من الحال ودوام فرحان مرة . . . حزين مرة</a></li>
+<li><a href="#s-06">س لـــــ بــــ ف يــــ ع يش تــــي نو ال كي عال يا نو …</a></li>
+<li><a href="#s-07">الألد يا و كثـرة واحد بنادم ف حيرتي يا</a></li>
+<li><a href="#s-08">رماني غدره ياك رفيق نحسبه واللي</a></li>
+<li><a href="#s-09">كفيــــ الش ر عـــاد دله ــ و قبلنــا</a></li>
+<li><a href="#s-10">عارفينو راكم جرى واللي</a></li>
+<li><a href="#s-11">غادي وين اهلل يعلم سامحوني</a></li>
+<li><a href="#s-12">دايزة الصبيان دموع لبح و</a></li>
+<li><a href="#s-13">أاللي بكم عدياني</a></li>
+<li><a href="#s-14">يربـــــــا يومك ف وال شغلك ضاع</a></li>
+<li><a href="#s-15">الـــشـــــــوم أيــام ف تـولـي كالـلـفـعـى</a></li>
+<li><a href="#s-16">حد يبغي حد عاد ما</a></li>
+<li><a href="#s-17">واه الــعــــــربـــــي خــــــــويـــــــــا</a></li>
+<li><a href="#s-18">وحدي هايم مشيت الســــــوال حر عظ ايا ف وشعلوا</a></li>
+<li><a href="#s-19">تـلـگيني بالنبي ربي يا فيك غير ورجايا آه</a></li>
+<li><a href="#s-20">العلـــ هـــــــا زو خيـــي حر كنت وإلى</a></li>
+<li><a href="#s-21">حال يدوب ما</a></li>
+<li><a href="#s-22">رفـيـق الــــغــــيــــوان احــــبــاب يـــــا</a></li>
+<li><a href="#s-23">حـــــد نـلـوم أنـا نـقـد ما</a></li>
+<li><a href="#s-24">مرسومة لوجاه عل الطاغي ويد خويا</a></li>
+<li><a href="#s-25">له قولو خر لال قولو لــــه قولو هذاك قو لو</a></li>
+<li><a href="#s-26">القيامـة من خفتي ما يــاكــرامــة لمــاذا</a></li>
+<li><a href="#s-27">بالفرحة دروبنا يضوي الزين واألمل</a></li>
+<li><a href="#s-28">وعــــالش بير في الحوه ظنه الخيـــــــــر ليه بغا</a></li>
+<li><a href="#s-29">لفراويـــ الساكنيــن لعــراب والد وايـا</a></li>
+<li><a href="#s-30">ض اســــــ يگولو يشوفوك ال رجليك ثبت</a></li>
+<li><a href="#s-31">ط ـــويـــــ</a></li>
+<li><a href="#s-32">لـــوطـــان عز يا بحبك تـــــنـــــــــادي أوالدك</a></li>
+<li><a href="#s-33">وخلينـي سير غير ناللي الفقايص بين</a></li>
+<li><a href="#s-34">مـرمـيـة عجــــوزة الطرقـان بين وساحت</a></li>
+<li><a href="#s-35">صابغ يا واعطف عبــــــــدك ب م ال يا ارفق</a></li>
+<li><a href="#s-36">عاليلـــــــــي كامي وانا حســـــــــــاب بال مدة هدي</a></li>
+<li><a href="#s-37">خودونـــــــي غير هلل . . . خ ود وني غي</a></li>
+<li><a href="#s-38">لح جـــــــي</a></li>
+<li><a href="#s-39">حــالــ ف غــادي</a></li>
+<li><a href="#s-40">لت غــرا ظهرو اعطى تلي هو من يا</a></li>
+<li><a href="#s-41">الغربــــــة و ليعـــــــة الغربـة ف تلومونا ال</a></li>
+<li><a href="#s-42">السايل الدم يا</a></li>
+<li><a href="#s-43">فــــــيـــــــه</a></li>
+<li><a href="#s-44">الگـول ف تش هرني لعلى عالم يا</a></li>
+<li><a href="#s-45">وعاد النعمة..ما ال مـرهــــــوب گـفــــــا الحـــق</a></li>
+<li><a href="#s-46">مـردومـيـــن لـكـواخ عـالـيــة الـعـمـارات</a></li>
+<li><a href="#s-47">العبــــاد عـــــل هذا</a></li>
+<li><a href="#s-48">لغدر ب توشمات الخاوة حزان شلى</a></li>
+<li><a href="#s-49">هاجو فاتو ما هايجين مواجه ب لبحر الداخل يا</a></li>
+<li><a href="#s-50">؟ قام ة و نم دي و ا</a></li>
+<li><a href="#s-51">الخ و يا يـعـشــــاق بــــاقــــــي مـــــا</a></li>
+<li><a href="#s-52">قاضي عليه ولقهر الخوف</a></li>
+<li><a href="#s-53">تما جرادها وفرخت حطت الطبقـات فوگ راسها رسات طبقة</a></li>
+<li><a href="#s-54">آعلولة وطال لغدر طال</a></li>
+<li><a href="#s-55">اهلل اهلل اهلل</a></li>
+<li><a href="#s-56">نـعــيــــ وشــانــــك بـخـيـــــل أصـلــك</a></li>
+<li><a href="#s-57">يرفرف عالمي</a></li>
+<li><a href="#s-58">لع ش ية م لزو و الراي</a></li>
+<li><a href="#s-59">بــابــا أ الظـــال قند يـــ</a></li>
+<li><a href="#s-60">العــــــــــــو دة مـــــــو يــــــا آه</a></li>
+<li><a href="#s-61">الحجر گلوب يا المعبود الصنك عبيد</a></li>
+<li><a href="#s-62">جـــيـبـــــــوا الــبــيـــــضــــا الـطيــــــور</a></li>
+<li><a href="#s-63">بالقــاعـدة شي كل كا القدام وخ ط و ة اللو خطوة</a></li>
+<li><a href="#s-64">العدوان وطول الغربة طول ...فا يا ح يفا يا</a></li>
+<li><a href="#s-65">ســـحــــابـــــي م كح خوتي عذاب</a></li>
+<li><a href="#s-66">ط بي ترج م وكة كا ول</a></li>
+<li><a href="#s-67">فاينــــ ش غ ل و ايلـــي</a></li>
+<li><a href="#s-68">و اقفا ج وبى ص ي د و النبي واصحاب</a></li>
+<li><a href="#s-69">الغيوان ناس أغاني </a></li>
 </ul>
 </section>
 <section id="s-01" class="snap-section">
-<h2>مقطع 1</h2>
+<h2>إفـادة بقـات مــا ليــك هــو هــا</h2>
 <div class="lyrics">إفـادة بقـات مــا ليــك هــو هــا
 تمـادي الجهــــل ليــك هــو هــا
 عــادة الســرقة ليــك هــو هــا
@@ -186,10 +187,10 @@ footer a{color:var(--accent);text-decoration:none}
 . . . وبردات الگلب ف كانت . . . جمرة تشعل جيتي
 لوقات بين ثاني جيتي
 َبـــاِلــــــــي َْش ـــاغَــــــــ ُو يَـــــــا َش ــاطــِّنـــــــي يَــــــــا</div>
-<div class="back-link"><a href="#s-index">↑ الفهرس</a></div>
+<div class="back-link"><a href="#s-index">📖 العودة للفهرس</a></div>
 </section>
 <section id="s-02" class="snap-section">
-<h2>مقطع 2</h2>
+<h2>أشـــرار تـلـهــب قـلـبـه ف الـنـار جـانـا مـن يـا</h2>
 <div class="lyrics">* * * *
 أشـــرار تـلـهــب قـلـبـه ف الـنـار جـانـا مـن يـا
 أسـرار يحكـي حالـه ف الـظـلــم جـانــا مــن يــا
@@ -211,10 +212,10 @@ footer a{color:var(--accent);text-decoration:none}
 عْـِلــيـنـَــــــــــــــــا
 تربينـــــــــــا العز وف ناس والد احنا راه
 علــيـنــــــــــــــــــا جمالــــــك رد جمال يا</div>
-<div class="back-link"><a href="#s-index">↑ الفهرس</a></div>
+<div class="back-link"><a href="#s-index">📖 العودة للفهرس</a></div>
 </section>
 <section id="s-03" class="snap-section">
-<h2>مقطع 3</h2>
+<h2>تربينـــــــــا الخير وف ناس والد احنا راه</h2>
 <div class="lyrics">تربينـــــــــا الخير وف ناس والد احنا راه
 ْْد َو ا َْلْمـِليــــــــ شوفـــة علــى عـيونــــا
 عينينا ف لغبار ترمي ال زين ماشي وانت
@@ -234,10 +235,10 @@ footer a{color:var(--accent);text-decoration:none}
 الــقــتــالـــــة سم من شر ثعبان لگيناهم
 الشعالة گبـــل گلبــي يــا خيمتنــا نتذكــر
 نخالــــة ْو لَّــى وشعيرنــا گمحنــا نتذكــر</div>
-<div class="back-link"><a href="#s-index">↑ الفهرس</a></div>
+<div class="back-link"><a href="#s-index">📖 العودة للفهرس</a></div>
 </section>
 <section id="s-04" class="snap-section">
-<h2>مقطع 4</h2>
+<h2>يت ال جرحك وعدي يا الگلب ف شگة يا</h2>
 <div class="lyrics">ََيْت َال جرحك وعدي يا الگلب ف شگة يا
 تتســــالـــــى امتى وعدي يا لعذاب ليالي
 رجالـــة واحنا گلبي يا لخدع ف عيشونا
@@ -258,10 +259,10 @@ footer a{color:var(--accent);text-decoration:none}
 خــــــــان اليوم وعدي أيا يخون أنا ولفي يگول وشكون
 اْخ َبالْـنَـا َص فَّـا فينا شكون حالها وذا ليام ذي
 ْخْس َرا مرة . . ْْربَا مرة لذهان فيها حارت</div>
-<div class="back-link"><a href="#s-index">↑ الفهرس</a></div>
+<div class="back-link"><a href="#s-index">📖 العودة للفهرس</a></div>
 </section>
 <section id="s-05" class="snap-section">
-<h2>مقطع 5</h2>
+<h2>المحـــال من الحال ودوام فرحان مرة . . . حزين مرة</h2>
 <div class="lyrics">المحـــال من الحال ودوام فرحان مرة . . . حزين مرة
 * * * *
 ادفعني راه اليوم وعدي يا حالي
@@ -287,10 +288,10 @@ footer a{color:var(--accent);text-decoration:none}
 َأْهِلي َيا ْد ْرْبَنا َعْلى َْو اْق ْعَالْم َنا ُْو َس ا
 أعجبني
 يعجبني لم</div>
-<div class="back-link"><a href="#s-index">↑ الفهرس</a></div>
+<div class="back-link"><a href="#s-index">📖 العودة للفهرس</a></div>
 </section>
 <section id="s-06" class="snap-section">
-<h2>مقطع 6</h2>
+<h2>س لـــــ بــــ ف يــــ ع يش تــــي نو ال كي عال يا نو …</h2>
 <div class="lyrics">َْس لـــــ َْبــــ ِْف يــــ ِع يْش ِتــــي ْْنَو اْل ِْكي َْعاَل َيا ْْنَو ال ِْكي
 اِْد وي عِيِني َيا ْآَيا
 ْْيْت ْقْس ـــــ َم ـــــا ِف ينـــــــَـا َْو ا اْح نــــــــَـا ْْقــــــَال ْْقــــــَال
@@ -347,10 +348,10 @@ footer a{color:var(--accent);text-decoration:none}
 والْس َباْيا ْْلْح َرا . . . والشر الخير َم ْبَداها
 طنان باأل فينا العيب
 َم اَية َو ْم ْو ّح ْـَدة ُلغَـة َ</div>
-<div class="back-link"><a href="#s-index">↑ الفهرس</a></div>
+<div class="back-link"><a href="#s-index">📖 العودة للفهرس</a></div>
 </section>
 <section id="s-07" class="snap-section">
-<h2>مقطع 7</h2>
+<h2>الألد يا و كثـرة واحد بنادم ف حيرتي يا</h2>
 <div class="lyrics">ْالَألْد َيا ُو َكثْـَرة واحد بنادم ف حيرتي يا
 إنسان وذاك . . . اإلنسان ذاك ياك
 مرايا لذاك هذاك ياك
@@ -371,10 +372,10 @@ footer a{color:var(--accent);text-decoration:none}
 تــعــالــي
 هاكذا أنا لي ما تسول ال الشدة ف رفيقي يا تعالي
 الـبخالـة وكـثـرو الـجـــود نـاس قـلـو</div>
-<div class="back-link"><a href="#s-index">↑ الفهرس</a></div>
+<div class="back-link"><a href="#s-index">📖 العودة للفهرس</a></div>
 </section>
 <section id="s-08" class="snap-section">
-<h2>مقطع 8</h2>
+<h2>رماني غدره ياك رفيق نحسبه واللي</h2>
 <div class="lyrics">رماني غدره ياك رفيق نحسبه واللي
 أيــامـــه وتدالت عــــواج زمانا مال
 * * * *
@@ -412,10 +413,10 @@ footer a{color:var(--accent);text-decoration:none}
 معاه مشا ما واحد حتى حبابــــي يا المسكين مات
 قــراه مــا عليـــه بـــزز راســـه عـنـد طـالـب قـرا
 حاضيـــاه خيالــه علــى عميــــا المـيـمــــة خلـــى</div>
-<div class="back-link"><a href="#s-index">↑ الفهرس</a></div>
+<div class="back-link"><a href="#s-index">📖 العودة للفهرس</a></div>
 </section>
 <section id="s-09" class="snap-section">
-<h2>مقطع 9</h2>
+<h2>كفيــــ الش ر عـــاد دله ــ و قبلنــا</h2>
 <div class="lyrics">ْْكِفيــــ ْالّش ْر عَـــاد ْدْلُه ــ ْو ْقْبْلنَــا
 ْش ْكــــوى كاْيقْبــــل ْعْــديـ َتْلَقــى َْو
 ْتْكِليـــــــف يرضى ما ْيُخ ون َم ا ْْو ْيَبّل
@@ -436,10 +437,10 @@ footer a{color:var(--accent);text-decoration:none}
 لهيه كع السامعين يا التسليم طالب
 دوم الحق كالم يا دوم
 لحرار طعنتو الظهر من</div>
-<div class="back-link"><a href="#s-index">↑ الفهرس</a></div>
+<div class="back-link"><a href="#s-index">📖 العودة للفهرس</a></div>
 </section>
 <section id="s-10" class="snap-section">
-<h2>مقطع 10</h2>
+<h2>عارفينو راكم جرى واللي</h2>
 <div class="lyrics">عارفينو راكم جرى واللي
 الظالم ف أرميتونا
 ردهاته في سيدي يا حنا ها
@@ -459,10 +460,10 @@ footer a{color:var(--accent);text-decoration:none}
 زالتي سامحولي عيوبي سامحولي
 غادي وين اهلل يعلم سامحوني
 عثرات أنا نعدها خطوات سامحولي</div>
-<div class="back-link"><a href="#s-index">↑ الفهرس</a></div>
+<div class="back-link"><a href="#s-index">📖 العودة للفهرس</a></div>
 </section>
 <section id="s-11" class="snap-section">
-<h2>مقطع 11</h2>
+<h2>غادي وين اهلل يعلم سامحوني</h2>
 <div class="lyrics">غادي وين اهلل يعلم سامحوني
 بحياتي المعنى يا تنساني واياك
 افهمني الراغب يا تنساني واياك
@@ -481,10 +482,10 @@ footer a{color:var(--accent);text-decoration:none}
 َفاْيَزة الحگرة وفيك
 أحكام ماضي كل ومن
 َح ايزة َْلْح َزا من ليام فيك</div>
-<div class="back-link"><a href="#s-index">↑ الفهرس</a></div>
+<div class="back-link"><a href="#s-index">📖 العودة للفهرس</a></div>
 </section>
 <section id="s-12" class="snap-section">
-<h2>مقطع 12</h2>
+<h2>دايزة الصبيان دموع لبح و</h2>
 <div class="lyrics">دايزة الصبيان دموع َْلْبُح و َ
 هلل سارت ارواحهم
 عالم يا الظالم ف وفنات عاشت
@@ -506,10 +507,10 @@ footer a{color:var(--accent);text-decoration:none}
 ْآ َدنَّــة َدنَّــة
 َدنَّــة ْآ َدنَّــة َدنَّــة َدنَّــة
 بـــالـــك رد</div>
-<div class="back-link"><a href="#s-index">↑ الفهرس</a></div>
+<div class="back-link"><a href="#s-index">📖 العودة للفهرس</a></div>
 </section>
 <section id="s-13" class="snap-section">
-<h2>مقطع 13</h2>
+<h2>أاللي بكم عدياني</h2>
 <div class="lyrics">أاللي بكم عدياني
 شروطكم ضميري ف حافظ
 مكسوب ليكم عشاگ
@@ -530,10 +531,10 @@ footer a{color:var(--accent);text-decoration:none}
 لقوام بسروجهم يلجموك كالگمري
 الـــركـبـــة يجـــربـــو بزر ويطلعو
 مشيــــــــان سقيم ديما حالك وأنت</div>
-<div class="back-link"><a href="#s-index">↑ الفهرس</a></div>
+<div class="back-link"><a href="#s-index">📖 العودة للفهرس</a></div>
 </section>
 <section id="s-14" class="snap-section">
-<h2>مقطع 14</h2>
+<h2>يربـــــــا يومك ف وال شغلك ضاع</h2>
 <div class="lyrics">يربـــــــا يومك ف وال شغلك ضاع
 ولهــــان محروم تبات اللوايح بين
 خــــربـــــة ف موكة نواح وتنوح
@@ -553,10 +554,10 @@ footer a{color:var(--accent);text-decoration:none}
 كذبــــــــــة تصير معاها العشرة بعد من
 مغــمـــــوم غفيــل وانــا ليــا نفايــق ب
 كـبــــــة غــيـران وتغيــر نسهــى غيــر</div>
-<div class="back-link"><a href="#s-index">↑ الفهرس</a></div>
+<div class="back-link"><a href="#s-index">📖 العودة للفهرس</a></div>
 </section>
 <section id="s-15" class="snap-section">
-<h2>مقطع 15</h2>
+<h2>الـــشـــــــوم أيــام ف تـولـي كالـلـفـعـى</h2>
 <div class="lyrics">الـــشـــــــوم أيــام ف تـولـي كالـلـفـعـى
 الـضربــــة وتـسـنـى نــيــابــهــا هـــازا
 * * * *
@@ -595,10 +596,10 @@ footer a{color:var(--accent);text-decoration:none}
 ولمرارة القحط ويتوانس للوكر الولف يعود
 أعجبني
 يعجبني لم</div>
-<div class="back-link"><a href="#s-index">↑ الفهرس</a></div>
+<div class="back-link"><a href="#s-index">📖 العودة للفهرس</a></div>
 </section>
 <section id="s-16" class="snap-section">
-<h2>مقطع 16</h2>
+<h2>حد يبغي حد عاد ما</h2>
 <div class="lyrics">حد يبغي حد عاد ما
 حد يسمع حد عاد وال
 مقواه يا وصداعكم هادي الدوخة
@@ -620,10 +621,10 @@ footer a{color:var(--accent);text-decoration:none}
 تــريـد إلــى بعــادك
 مــا واو الــــهــــــم ف زايـــــد قــــــد آي
 المـــــوت حــر كـوانــي</div>
-<div class="back-link"><a href="#s-index">↑ الفهرس</a></div>
+<div class="back-link"><a href="#s-index">📖 العودة للفهرس</a></div>
 </section>
 <section id="s-17" class="snap-section">
-<h2>مقطع 17</h2>
+<h2>واه الــعــــــربـــــي خــــــــويـــــــــا</h2>
 <div class="lyrics">واه الــعــــــربـــــي خــــــــويـــــــــا
 العــــربـــــــي يـــــــــــــــــا
 آش حيـــانــــا وا األيام حيــــانــــا وا
@@ -650,10 +651,10 @@ footer a{color:var(--accent);text-decoration:none}
 * * * *
 ليهــم گلــت شحـــــال گالوا نتوالمو ليهم گلت
 َ  گــالــــوا نتسالمــو</div>
-<div class="back-link"><a href="#s-index">↑ الفهرس</a></div>
+<div class="back-link"><a href="#s-index">📖 العودة للفهرس</a></div>
 </section>
 <section id="s-18" class="snap-section">
-<h2>مقطع 18</h2>
+<h2>وحدي هايم مشيت الســــــوال حر عظ ايا ف وشعلوا</h2>
 <div class="lyrics">وحدي هايم مشيت الســــــوال حر ْعَظ اَيا ف وشعلوا
 علـــة مسكون
 وردوا حيروني غير تطــوال والغاية لولفي ذاتي فنيت
@@ -697,10 +698,10 @@ footer a{color:var(--accent);text-decoration:none}
 اهلل رسول يا الدنيا مال من لي خير
 عليه ْتْـِه ي والِّلي الدنيا مال من لي خير
 ْْش ِبي وداك داك اللي الدنيا مال من لي خير</div>
-<div class="back-link"><a href="#s-index">↑ الفهرس</a></div>
+<div class="back-link"><a href="#s-index">📖 العودة للفهرس</a></div>
 </section>
 <section id="s-19" class="snap-section">
-<h2>مقطع 19</h2>
+<h2>تـلـگيني بالنبي ربي يا فيك غير ورجايا آه</h2>
 <div class="lyrics">تَـلْـِگيِني بالنبي ربي يا فيك غير ورجايا آه
 * * * *
 الكاف حرف بين راد ما يعلم قريبــــة ْص ْرْخ ُته موالنا
@@ -723,10 +724,10 @@ footer a{color:var(--accent);text-decoration:none}
 دينــي يــا دينــي يـــا ُو َكلْـفُــــو عذبونا ياك
 مدلـــة غير نزيدك ما ِخ ِّيي الدل عل صبرك
 َْتعْــــ زاد الظالم عل خيـــي سكتـــي وإلى</div>
-<div class="back-link"><a href="#s-index">↑ الفهرس</a></div>
+<div class="back-link"><a href="#s-index">📖 العودة للفهرس</a></div>
 </section>
 <section id="s-20" class="snap-section">
-<h2>مقطع 20</h2>
+<h2>العلـــ هـــــــا زو خيـــي حر كنت وإلى</h2>
 <div class="lyrics">َالعلَّـــ ْهَـــــــا َْزَّو خيـــي حر كنت وإلى
 َم ْگَو اِني
 جوايه كل من لحـــزان جـــات گلِبي َيا ْبي ْگَو اِني
@@ -754,10 +755,10 @@ footer a{color:var(--accent);text-decoration:none}
 تجيــــــب تروح الفصول بين الهايمـــة لرايح تصغى
 تنهـــــادي
 المظلوم حال الظــالم حـال حالـي المظلوم لصوت تصغى</div>
-<div class="back-link"><a href="#s-index">↑ الفهرس</a></div>
+<div class="back-link"><a href="#s-index">📖 العودة للفهرس</a></div>
 </section>
 <section id="s-21" class="snap-section">
-<h2>مقطع 21</h2>
+<h2>حال يدوب ما</h2>
 <div class="lyrics">الهـــايم
 حال يدوب ما
 حال يدوم ما
@@ -780,10 +781,10 @@ footer a{color:var(--accent);text-decoration:none}
 الــيــــــوم صـــد الخــالـة
 زيــــن الــــغــــيــــوان احــــبــاب يـــــا
 الــيــــــوم صـــد القـــامة</div>
-<div class="back-link"><a href="#s-index">↑ الفهرس</a></div>
+<div class="back-link"><a href="#s-index">📖 العودة للفهرس</a></div>
 </section>
 <section id="s-22" class="snap-section">
-<h2>مقطع 22</h2>
+<h2>رفـيـق الــــغــــيــــوان احــــبــاب يـــــا</h2>
 <div class="lyrics">رفـيـق الــــغــــيــــوان احــــبــاب يـــــا
 الــيــــــوم صـــد الـمـوال
 * * * *
@@ -810,10 +811,10 @@ footer a{color:var(--accent);text-decoration:none}
 الرسول خاتم يا المصطفى سيدي . . . الرسول خاتم يا طه
 أعجبني
 يعجبني لم</div>
-<div class="back-link"><a href="#s-index">↑ الفهرس</a></div>
+<div class="back-link"><a href="#s-index">📖 العودة للفهرس</a></div>
 </section>
 <section id="s-23" class="snap-section">
-<h2>مقطع 23</h2>
+<h2>حـــــد نـلـوم أنـا نـقـد ما</h2>
 <div class="lyrics">حـــــد نـلـوم أنـا نـقـد ما
 من نعاقب طبعب من وال يبغيني اللي نجافي طبعي من وال
 يهجرني
@@ -860,10 +861,10 @@ footer a{color:var(--accent);text-decoration:none}
 مســـالـــــــي العالم هاد غراب ْنّْو حْ يا
 مقيومـة والنوايح مات گالو زمان من
 مزمومـــــــة افواه كل بقات شورى ال</div>
-<div class="back-link"><a href="#s-index">↑ الفهرس</a></div>
+<div class="back-link"><a href="#s-index">📖 العودة للفهرس</a></div>
 </section>
 <section id="s-24" class="snap-section">
-<h2>مقطع 24</h2>
+<h2>مرسومة لوجاه عل الطاغي ويد خويا</h2>
 <div class="lyrics">مرسومة لوجاه عل الطاغي ويد خويا
 هموني ما
 َض اعُـــــــــــو إَلى الرجال غير هموني ما
@@ -884,10 +885,10 @@ footer a{color:var(--accent);text-decoration:none}
 ُو َم اعُـــــــــــــــو اللبن َلْع ِص يْد ْتُه م ْكّثُرو
 َْح ضَّـــــــا َيا َس ّفت ْج َّد ة ْيقُو ل وْش ُكون
 * * * *</div>
-<div class="back-link"><a href="#s-index">↑ الفهرس</a></div>
+<div class="back-link"><a href="#s-index">📖 العودة للفهرس</a></div>
 </section>
 <section id="s-25" class="snap-section">
-<h2>مقطع 25</h2>
+<h2>له قولو خر لال قولو لــــه قولو هذاك قو لو</h2>
 <div class="lyrics">له قولو خر لال قولو لــــه قولو هذاك ْ  قُو ُلو
 ُلــــه ْتْو ِّري ْلَّيام دابا فهـــــــم ما إلى له قولو
 لـــــه قولو ْيِم ي لَلَّا قولو
@@ -913,10 +914,10 @@ footer a{color:var(--accent);text-decoration:none}
 أنت؟
 َداْيِني َيا َداْيِني َو ا
 كرامة يا لمذا</div>
-<div class="back-link"><a href="#s-index">↑ الفهرس</a></div>
+<div class="back-link"><a href="#s-index">📖 العودة للفهرس</a></div>
 </section>
 <section id="s-26" class="snap-section">
-<h2>مقطع 26</h2>
+<h2>القيامـة من خفتي ما يــاكــرامــة لمــاذا</h2>
 <div class="lyrics">القيامـة من خفتي ما يــاكــرامــة لمــاذا
 مـالمــــة قدرتـــي ما يــاشهـــادة لمــاذا
 * * * *
@@ -956,10 +957,10 @@ footer a{color:var(--accent);text-decoration:none}
 لسقام تفني . . . الولف بنار ترمي غمامة وكل
 سيره في الصبيان ركاب يبدا
 الجمرة كيف يبهى الظلم يبدا</div>
-<div class="back-link"><a href="#s-index">↑ الفهرس</a></div>
+<div class="back-link"><a href="#s-index">📖 العودة للفهرس</a></div>
 </section>
 <section id="s-27" class="snap-section">
-<h2>مقطع 27</h2>
+<h2>بالفرحة دروبنا يضوي الزين واألمل</h2>
 <div class="lyrics">بالفرحة دروبنا يضوي الزين واألمل
 سالم يا ب زغاردنا وتطلع
 قلوعها هازا الدنيا تجينا
@@ -980,10 +981,10 @@ footer a{color:var(--accent);text-decoration:none}
 * * * *
 وعــــالش وبــــوه أمـه ولــد خوه يغدر الخو يما
 آيـمــــا</div>
-<div class="back-link"><a href="#s-index">↑ الفهرس</a></div>
+<div class="back-link"><a href="#s-index">📖 العودة للفهرس</a></div>
 </section>
 <section id="s-28" class="snap-section">
-<h2>مقطع 28</h2>
+<h2>وعــــالش بير في الحوه ظنه الخيـــــــــر ليه بغا</h2>
 <div class="lyrics">وعــــالش بير في الحوه ظنه الخيـــــــــر ليه بغا
 آيـمــــا
 بــــدون العـقـــــول غــــاب انگــول واش وانا
@@ -1045,10 +1046,10 @@ footer a{color:var(--accent);text-decoration:none}
 واه أواه واه أواه يتحداه بغا من على نازل
 اهلل الدنيا حال هذا واه أواه واه أواه
 غطاه والسما فراشه األرض غالباه لگفيفة شي</div>
-<div class="back-link"><a href="#s-index">↑ الفهرس</a></div>
+<div class="back-link"><a href="#s-index">📖 العودة للفهرس</a></div>
 </section>
 <section id="s-29" class="snap-section">
-<h2>مقطع 29</h2>
+<h2>لفراويـــ الساكنيــن لعــراب والد وايـا</h2>
 <div class="lyrics">َْلْفَراِويـــ الساكنيــن لعــراب والد وايـا
 التاويــــل يدير ربي حارة اليلة هاد واو
 يـخـلـيـكـــــــم اهلل لـعـــراب دوك وايـــا
@@ -1069,10 +1070,10 @@ footer a{color:var(--accent);text-decoration:none}
 َو اَتاتُـــــه والفلجة ْم ِريَش ة كحلة عينه
 َْباسُـــ ِْيَح ـَّيـ ربـي يـا المبـروم والصـاگ
 نعاسه طاب حتى لفراش ف ويجي يمشي</div>
-<div class="back-link"><a href="#s-index">↑ الفهرس</a></div>
+<div class="back-link"><a href="#s-index">📖 العودة للفهرس</a></div>
 </section>
 <section id="s-30" class="snap-section">
-<h2>مقطع 30</h2>
+<h2>ض اســــــ يگولو يشوفوك ال رجليك ثبت</h2>
 <div class="lyrics">َْض اسَــــــ يگولو يشوفوك ال رجليك ثبت
 ياســــر راه لگراضي دي من عليك خفت
 * * * *
@@ -1092,10 +1093,10 @@ footer a{color:var(--accent);text-decoration:none}
 ََتِص يـــ َْكــ الَمَهـــاَرة ُتــْظ ــِه ـُـر
 َفــــــاَرة
 َش ْع ـــُرَهـــا ٌَج ِم ـــيـــــ َش ـْكـُلـَهـا</div>
-<div class="back-link"><a href="#s-index">↑ الفهرس</a></div>
+<div class="back-link"><a href="#s-index">📖 العودة للفهرس</a></div>
 </section>
 <section id="s-31" class="snap-section">
-<h2>مقطع 31</h2>
+<h2>ط ـــويـــــ</h2>
 <div class="lyrics">ٌَط ـــِويـــــ
 َخ ــْض ــَرة
 . . . بالدي يا خضرة
@@ -1116,10 +1117,10 @@ footer a{color:var(--accent);text-decoration:none}
 الخــالـــــة مــوالت يـا أنـــــــــــادي وعـلـيـك
 الفدان أرض وسط في النَّــــــــِد ي ْالّْزْه أنت
 الــجــوالـة كل وجه ف الشـــــادي بلحن نغمة</div>
-<div class="back-link"><a href="#s-index">↑ الفهرس</a></div>
+<div class="back-link"><a href="#s-index">📖 العودة للفهرس</a></div>
 </section>
 <section id="s-32" class="snap-section">
-<h2>مقطع 32</h2>
+<h2>لـــوطـــان عز يا بحبك تـــــنـــــــــادي أوالدك</h2>
 <div class="lyrics">لـــوطـــان عز يا بحبك تـــــنـــــــــادي أوالدك
 ْْلـجْــَو اهْـ هـــــادي الزمان وليك
 تَــتْــَاللَـــــي
@@ -1139,10 +1140,10 @@ footer a{color:var(--accent);text-decoration:none}
 هـنـيـنـــي الـخـاوا وهـنـيـني سير غير
 * * * *
 لهبالـــي خـلـيـنـي لـحــزانــــي خلينـي</div>
-<div class="back-link"><a href="#s-index">↑ الفهرس</a></div>
+<div class="back-link"><a href="#s-index">📖 العودة للفهرس</a></div>
 </section>
 <section id="s-33" class="snap-section">
-<h2>مقطع 33</h2>
+<h2>وخلينـي سير غير ناللي الفقايص بين</h2>
 <div class="lyrics">وخلينـي سير غير ناللي الفقايص بين
 * * * *
 عـيـوبـي ل خليني لمكتـوبـــي خليـنـي
@@ -1201,10 +1202,10 @@ footer a{color:var(--accent);text-decoration:none}
 جـلـيـة والطرقـــان الــشــــــارع هــــــول
 معمية ظلمة وجات شــمــــــس وغـابـــت
 شــتــيـة وبــــــرق الـرعـــــــود تـكـلـمـت</div>
-<div class="back-link"><a href="#s-index">↑ الفهرس</a></div>
+<div class="back-link"><a href="#s-index">📖 العودة للفهرس</a></div>
 </section>
 <section id="s-34" class="snap-section">
-<h2>مقطع 34</h2>
+<h2>مـرمـيـة عجــــوزة الطرقـان بين وساحت</h2>
 <div class="lyrics">مـرمـيـة عجــــوزة الطرقـان بين وساحت
 مسبـيــة حالها وب الحــيـــــوط تعرفـهــا
 * * * *
@@ -1285,10 +1286,10 @@ footer a{color:var(--accent);text-decoration:none}
 لْفَياِنــــــــي
 ْبِــيـــــــ ْْيِط يــــ َتاَرة ْْيْع ْت ــ َتــاَرة
 ُْلوعَـــــــــــــا</div>
-<div class="back-link"><a href="#s-index">↑ الفهرس</a></div>
+<div class="back-link"><a href="#s-index">📖 العودة للفهرس</a></div>
 </section>
 <section id="s-35" class="snap-section">
-<h2>مقطع 35</h2>
+<h2>صابغ يا واعطف عبــــــــدك ب م ال يا ارفق</h2>
 <div class="lyrics">صابغ يا واعطف عبــــــــدك ب َْم اْل َيا ارفق
 ْالْنَيا
 اهلل يهديك ُلغـْــتَـــــــام َْم الْنَبا َْبْد يا
@@ -1314,10 +1315,10 @@ footer a{color:var(--accent);text-decoration:none}
 حـــرام لبها ف تمجادي مشــــــا ما : ونگول نفرح
 فيا لحسود قول سمع مـــــــرام لي ساغ ال من يا
 ْص فَــــــا َم ا َْبْع ْوَتَكَّد</div>
-<div class="back-link"><a href="#s-index">↑ الفهرس</a></div>
+<div class="back-link"><a href="#s-index">📖 العودة للفهرس</a></div>
 </section>
 <section id="s-36" class="snap-section">
-<h2>مقطع 36</h2>
+<h2>عاليلـــــــــي كامي وانا حســـــــــــاب بال مدة هدي</h2>
 <div class="lyrics">عاليلـــــــــي كامي وانا حســـــــــــاب بال مدة هدي
 مسايلـــــي فيها تقضى الصـــــواب ساعة كانتمنى
 غزيلـــــــــــي بيا يجمع الرقـــــــــاب عاتق كانطلب
@@ -1400,10 +1401,10 @@ footer a{color:var(--accent);text-decoration:none}
 َم َّش انِـــــي َلْح َبل عل ولو ملســــوع منها زلت وال
 ْأَد ْأَد ْأَد
 لله</div>
-<div class="back-link"><a href="#s-index">↑ الفهرس</a></div>
+<div class="back-link"><a href="#s-index">📖 العودة للفهرس</a></div>
 </section>
 <section id="s-37" class="snap-section">
-<h2>مقطع 37</h2>
+<h2>خودونـــــــي غير هلل . . . خ ود وني غي</h2>
 <div class="lyrics">خودونـــــــي غير هلل . . . ُخ وُد وِني ْغي
 خدونـــــــــي غير َلفْـَداكم ْْنِه ي روحي
 دلونــــــــــــي هلل . . . ُو لْـفِـــي َم ْع ُد وم
@@ -1424,10 +1425,10 @@ footer a{color:var(--accent);text-decoration:none}
 وصلــــــت ما سفبنتك مال جاوبني ليه جرى واش
 المسلوب السيف مول بابا ْْص فَــا َْكَّد شكون بابا
 عْـيَّـــانــــا بابا والغــــول جحا فين بابا</div>
-<div class="back-link"><a href="#s-index">↑ الفهرس</a></div>
+<div class="back-link"><a href="#s-index">📖 العودة للفهرس</a></div>
 </section>
 <section id="s-38" class="snap-section">
-<h2>مقطع 38</h2>
+<h2>لح جـــــــي</h2>
 <div class="lyrics">َلْح جـِــــــي
 المقــــــدس ُْو حَــــــ بابا يجــــي منين يسير بابا
 الكبـــــادي ف نـــــداه بابا نشوفــــــه مشتاق بابا
@@ -1448,10 +1449,10 @@ footer a{color:var(--accent);text-decoration:none}
 يموت ما العدل
 يموت ما السالم
 وابابا واهلل واهلل</div>
-<div class="back-link"><a href="#s-index">↑ الفهرس</a></div>
+<div class="back-link"><a href="#s-index">📖 العودة للفهرس</a></div>
 </section>
 <section id="s-39" class="snap-section">
-<h2>مقطع 39</h2>
+<h2>حــالــ ف غــادي</h2>
 <div class="lyrics">حــالــ ف غــادي
 حــالــــي ف غــادي ْكـَالمِــي ْْنـگـــــــو
 خْـــتِـــــــي ْ  گولو ِّم ــــــــي ْ  گُــولُـــو
@@ -1508,10 +1509,10 @@ footer a{color:var(--accent);text-decoration:none}
 بِـيَّـــا غـَــاِدي فيــــن خويــا بيا غادي فين*****
 َْلقفا ْ  َْبا هو من يا
 جناحه ونشر الَكْنْد َرة عل فروج هو من يا</div>
-<div class="back-link"><a href="#s-index">↑ الفهرس</a></div>
+<div class="back-link"><a href="#s-index">📖 العودة للفهرس</a></div>
 </section>
 <section id="s-40" class="snap-section">
-<h2>مقطع 40</h2>
+<h2>لت غــرا ظهرو اعطى تلي هو من يا</h2>
 <div class="lyrics">َْلَّت غْــَرا ظهرو اعطى ِْتِّلي هو من يا
 َْبْلْمْه َما تمشي لغزال ريت ما عمرني
 ْس َراُح وا َعاُد وا الخيل وفراخ
@@ -1530,10 +1531,10 @@ footer a{color:var(--accent);text-decoration:none}
 بيـــــــــــا غايدي فين بياخويــــا غادي فين
 البــــــاس يحد شكون دقــــــــــــة تابعة دقة
 النــــــاس هـــــــاد يا الغربـة ف تلومونا ال</div>
-<div class="back-link"><a href="#s-index">↑ الفهرس</a></div>
+<div class="back-link"><a href="#s-index">📖 العودة للفهرس</a></div>
 </section>
 <section id="s-41" class="snap-section">
-<h2>مقطع 41</h2>
+<h2>الغربــــــة و ليعـــــــة الغربـة ف تلومونا ال</h2>
 <div class="lyrics">الغربــــــة ُو ليعـــــــة الغربـة ف تلومونا ال
 هـــي مــــا الُّروِم َّية َْع تكذبوا ال
 نَـشْـَبـــــة
@@ -1649,10 +1650,10 @@ footer a{color:var(--accent);text-decoration:none}
 السايل الدم يا
 أعجبني
 يعجبني لم</div>
-<div class="back-link"><a href="#s-index">↑ الفهرس</a></div>
+<div class="back-link"><a href="#s-index">📖 العودة للفهرس</a></div>
 </section>
 <section id="s-42" class="snap-section">
-<h2>مقطع 42</h2>
+<h2>السايل الدم يا</h2>
 <div class="lyrics">السايل الدم يا
 الذابل الورد يا
 افريقيا يا . . . البلدان أم يا
@@ -1673,10 +1674,10 @@ footer a{color:var(--accent);text-decoration:none}
 فـيــه غلــة التسخرشـــي الـجـــود مـــول طالــــب
 دعــايــا ب نزيده يوم كل
 يــــــاخــــــد صـاحـبــــه غـدار الطفـل</div>
-<div class="back-link"><a href="#s-index">↑ الفهرس</a></div>
+<div class="back-link"><a href="#s-index">📖 العودة للفهرس</a></div>
 </section>
 <section id="s-43" class="snap-section">
-<h2>مقطع 43</h2>
+<h2>فــــــيـــــــه</h2>
 <div class="lyrics">فــــــيـــــــه
 شفايا الناس بين ويجعله
 ضــايــعــيــن
@@ -1784,10 +1785,10 @@ footer a{color:var(--accent);text-decoration:none}
 عـــــرب بــقــيــنـــــا
 باسمك
 السمـا رافع يا بديت باش باسمك</div>
-<div class="back-link"><a href="#s-index">↑ الفهرس</a></div>
+<div class="back-link"><a href="#s-index">📖 العودة للفهرس</a></div>
 </section>
 <section id="s-44" class="snap-section">
-<h2>مقطع 44</h2>
+<h2>الگـول ف تش هرني لعلى عالم يا</h2>
 <div class="lyrics">الگـول ف َتْش َهْرِني لعلى عالم يا
 النمامــــــة اتباعه من تجعلني ال
 الگول أهل كالم مخسرين الكذابة
@@ -1916,10 +1917,10 @@ footer a{color:var(--accent);text-decoration:none}
 ولـعـيــــوب
 ال و مـحـبـــة ال لـعـطـــــوب و النكـــــد كثـــر
 مـحـبـــــوب</div>
-<div class="back-link"><a href="#s-index">↑ الفهرس</a></div>
+<div class="back-link"><a href="#s-index">📖 العودة للفهرس</a></div>
 </section>
 <section id="s-45" class="snap-section">
-<h2>مقطع 45</h2>
+<h2>وعاد النعمة..ما ال مـرهــــــوب گـفــــــا الحـــق</h2>
 <div class="lyrics">وعاد النعمة..ما ال مـرهــــــوب گـفــــــا الحـــق
 مگلوب بنادم
 الـسـمـطـة
@@ -1939,10 +1940,10 @@ footer a{color:var(--accent);text-decoration:none}
 بــــرانـــي أنـــا مـــا وحـدانـــي أنـــا مـــا
 عـلـيــــا والسـمـطـة مـــواطـــــــن أنــــــا
 يـــديــــــا يــجـــرح مـاضــي والـجـنـوي</div>
-<div class="back-link"><a href="#s-index">↑ الفهرس</a></div>
+<div class="back-link"><a href="#s-index">📖 العودة للفهرس</a></div>
 </section>
 <section id="s-46" class="snap-section">
-<h2>مقطع 46</h2>
+<h2>مـردومـيـــن لـكـواخ عـالـيــة الـعـمـارات</h2>
 <div class="lyrics">* * * *
 مـردومـيـــن لـكـواخ عـالـيــة الـعـمـارات
 مـحـروقـيـن لـفدادن دافــقـــــة لـمسـابـح
@@ -1964,10 +1965,10 @@ footer a{color:var(--accent);text-decoration:none}
 العام المدير
 أعجبني
 يعجبني لم</div>
-<div class="back-link"><a href="#s-index">↑ الفهرس</a></div>
+<div class="back-link"><a href="#s-index">📖 العودة للفهرس</a></div>
 </section>
 <section id="s-47" class="snap-section">
-<h2>مقطع 47</h2>
+<h2>العبــــاد عـــــل هذا</h2>
 <div class="lyrics">* * * *
 العبــــاد عـــــل هذا
 خـــــــــدام ليـــــــه والكـــــــل َْص ــايْــــــ
@@ -2017,10 +2018,10 @@ footer a{color:var(--accent);text-decoration:none}
 وحــــدي َْلْه ـــَو ا وايـــا
 تــمـيــــل العــافـيــة وأمـــــواج والـلـيــل
 الظلـــــــم ْأْكثْـــــــْوالْس ـــَال المــــان بقــــى مـــا ُْو لْــقْــتِــيــــ</div>
-<div class="back-link"><a href="#s-index">↑ الفهرس</a></div>
+<div class="back-link"><a href="#s-index">📖 العودة للفهرس</a></div>
 </section>
 <section id="s-48" class="snap-section">
-<h2>مقطع 48</h2>
+<h2>لغدر ب توشمات الخاوة حزان شلى</h2>
 <div class="lyrics">لغدر ب توشمات الخاوة حزان شلى
 * * * *
 تعالـي لــيــــك نـعـــيــد يــاوا واتـعــالــي
@@ -2070,10 +2071,10 @@ footer a{color:var(--accent);text-decoration:none}
 يبانو
 ْْبُح و . . . . الشايخــــة الغيــــوان كلمـــة
 الـْد َو الِـــي ْْو ْعــْنــ</div>
-<div class="back-link"><a href="#s-index">↑ الفهرس</a></div>
+<div class="back-link"><a href="#s-index">📖 العودة للفهرس</a></div>
 </section>
 <section id="s-49" class="snap-section">
-<h2>مقطع 49</h2>
+<h2>هاجو فاتو ما هايجين مواجه ب لبحر الداخل يا</h2>
 <div class="lyrics">* * * *
 هاجو فاتو ما هايجين مواجه ب لبحر الداخل يا
 راحة فيه تلقى ما مركب صنعت إلى
@@ -2094,10 +2095,10 @@ footer a{color:var(--accent);text-decoration:none}
 * * * *
 ما بال لبحر الداخل يا
 ؟ ْح َماَم ة ْ  َْيْرْه َْبا َْو ا</div>
-<div class="back-link"><a href="#s-index">↑ الفهرس</a></div>
+<div class="back-link"><a href="#s-index">📖 العودة للفهرس</a></div>
 </section>
 <section id="s-50" class="snap-section">
-<h2>مقطع 50</h2>
+<h2>؟ قام ة و نم دي و ا</h2>
 <div class="lyrics">؟ َقاَم ة ْ  ْْو ْنْم ِْدي َْو ا
 طاحو ركابيه النمر شاف الديب ال
 . . .للّْس َما ْْتْط ْل ْْبِغ ي َْكا
@@ -2117,10 +2118,10 @@ footer a{color:var(--accent);text-decoration:none}
 تخمم فيه الزمك
 تسلم فيه الزمك
 * * * *</div>
-<div class="back-link"><a href="#s-index">↑ الفهرس</a></div>
+<div class="back-link"><a href="#s-index">📖 العودة للفهرس</a></div>
 </section>
 <section id="s-51" class="snap-section">
-<h2>مقطع 51</h2>
+<h2>الخ و يا يـعـشــــاق بــــاقــــــي مـــــا</h2>
 <div class="lyrics">ْ  الُخ و َيا يـعـشــــاق بــــاقــــــي مـــــا
 ْْتْو ِّريـــ الَح اَلة
 عـلـيـا َهــاْج ــت تـــطـــــاق ال ظــــروفـــنـــــا
@@ -2165,10 +2166,10 @@ footer a{color:var(--accent);text-decoration:none}
 ْْلْع ْم ْ  َض ِّح يَنا وَم ا ْالْظ ْه ْ  ْْم ْط ُع وِني
 لقبر هم أخرها ياك
 َْم رءَتا َم ا َْداَل الزنقة ف بنادم</div>
-<div class="back-link"><a href="#s-index">↑ الفهرس</a></div>
+<div class="back-link"><a href="#s-index">📖 العودة للفهرس</a></div>
 </section>
 <section id="s-52" class="snap-section">
-<h2>مقطع 52</h2>
+<h2>قاضي عليه ولقهر الخوف</h2>
 <div class="lyrics">قاضي عليه ولقهر الخوف
 هادي لبحر يبان الفوق ومن الفوضى لعماق ف
 هنا والباطل الحق
@@ -2192,10 +2193,10 @@ footer a{color:var(--accent);text-decoration:none}
 احنـــا شكــــون ْْنْفـــَّر
 هــذا لخريــف نــــــــوار ْْنَب ما وقته حان الربيع
 لقصـــار كـــل عــم</div>
-<div class="back-link"><a href="#s-index">↑ الفهرس</a></div>
+<div class="back-link"><a href="#s-index">📖 العودة للفهرس</a></div>
 </section>
 <section id="s-53" class="snap-section">
-<h2>مقطع 53</h2>
+<h2>تما جرادها وفرخت حطت الطبقـات فوگ راسها رسات طبقة</h2>
 <div class="lyrics">تما جرادها وفرخت حطت الطبقـات فوگ راسها رسات طبقة
 بقــــات
 * * * *
@@ -2215,10 +2216,10 @@ footer a{color:var(--accent);text-decoration:none}
 مغبونة نفسه شهيد وكل
 : معاك ونصيح . . . فاقدني علولة
 معلولة قلوب يهدي غيرك هادي ال المولى يا</div>
-<div class="back-link"><a href="#s-index">↑ الفهرس</a></div>
+<div class="back-link"><a href="#s-index">📖 العودة للفهرس</a></div>
 </section>
 <section id="s-54" class="snap-section">
-<h2>مقطع 54</h2>
+<h2>آعلولة وطال لغدر طال</h2>
 <div class="lyrics">* * * *
 آَعُّلوَلة وطال لغدر طال
 المغبونة لقلوب مع الغيوان ديما
@@ -2240,10 +2241,10 @@ footer a{color:var(--accent);text-decoration:none}
 على له نمشـــي وأنـــا بالمركوب زارتوا الناس
 رجلـــــي
 هلل هلل هلل</div>
-<div class="back-link"><a href="#s-index">↑ الفهرس</a></div>
+<div class="back-link"><a href="#s-index">📖 العودة للفهرس</a></div>
 </section>
 <section id="s-55" class="snap-section">
-<h2>مقطع 55</h2>
+<h2>اهلل اهلل اهلل</h2>
 <div class="lyrics">اهلل اهلل اهلل
 الرســــــول ألسيــــــد ومعبــــد زايــــــر جيــت
 العربـــــي
@@ -2274,10 +2275,10 @@ footer a{color:var(--accent);text-decoration:none}
 فضحونــــــــــــا
 أعجبني
 يعجبني لم</div>
-<div class="back-link"><a href="#s-index">↑ الفهرس</a></div>
+<div class="back-link"><a href="#s-index">📖 العودة للفهرس</a></div>
 </section>
 <section id="s-56" class="snap-section">
-<h2>مقطع 56</h2>
+<h2>نـعــيــــ وشــانــــك بـخـيـــــل أصـلــك</h2>
 <div class="lyrics">ْْنـعِــيــــ وشــانــــك بـخـيـــــل أصـلــك
 النخـالــــة ْْعِص ـي َيا ْْقــِلـيـــ ْعَـــْيَش ـ
 لك وجرى طرى آش مـالـك آوا مــالــك
@@ -2297,10 +2298,10 @@ footer a{color:var(--accent);text-decoration:none}
 . . . الستعمار ضد
 . . . انتظار كل ف
 الحتالل جيوش ضد</div>
-<div class="back-link"><a href="#s-index">↑ الفهرس</a></div>
+<div class="back-link"><a href="#s-index">📖 العودة للفهرس</a></div>
 </section>
 <section id="s-57" class="snap-section">
-<h2>مقطع 57</h2>
+<h2>يرفرف عالمي</h2>
 <div class="lyrics">يرفرف عالمي
 بلوني مزوق
 حزوني مبعد
@@ -2319,10 +2320,10 @@ footer a{color:var(--accent);text-decoration:none}
 ْْلْح ِلي ُبوَيا َْح َّال َْح َّال
 َض اْو َية ْْعِلي ُْو َلْنَو ا ِس يِد ي َيا َْو ا
 َْلْبَي ْالطَّـْي َط ْيِري َو ا</div>
-<div class="back-link"><a href="#s-index">↑ الفهرس</a></div>
+<div class="back-link"><a href="#s-index">📖 العودة للفهرس</a></div>
 </section>
 <section id="s-58" class="snap-section">
-<h2>مقطع 58</h2>
+<h2>لع ش ية م لزو و الراي</h2>
 <div class="lyrics">ْلْع ِش َّية َْم َْلْزَو َْو الَّراْي
 ْالْت َرا ْْح ْم ْح ْمِرَّية َأُبو ْْعِلي َْو الَعا
 . . . ْالطّـْو ِبَيا َْو الْح َماَم ا
@@ -2342,10 +2343,10 @@ footer a{color:var(--accent);text-decoration:none}
 الَعْش َرة ْاْص َح ا اْص َح ِابي
 ِس يـــِد ي ْْلْمَط اْم ــ ْْعَّمـــا
 َبـــاَبـــا ْالّْنـــَو اْد ْْبنَّـــا</div>
-<div class="back-link"><a href="#s-index">↑ الفهرس</a></div>
+<div class="back-link"><a href="#s-index">📖 العودة للفهرس</a></div>
 </section>
 <section id="s-59" class="snap-section">
-<h2>مقطع 59</h2>
+<h2>بــابــا أ الظـــال قند يـــ</h2>
 <div class="lyrics">َبــاَبــا أَ ْالظْـــَال ْْقْنِد يـــ
 َأُخ ويَـــــا ْالّس ـَال ْْعـَّال
 ْْلعَــــا الَو ا َأَيا َو َاْرْكْد ُتوا
@@ -2368,10 +2369,10 @@ footer a{color:var(--accent);text-decoration:none}
 ْالــــــُّد َو ا ُْم ـــو ْو ِليــــــِد ي ِْف يـــــ ْالنُّـــــــَو ا
 الَبْه َمــــــة َتْرعَــى َو الَخ ْيــل ْالَخ ْيــ
 الَّد ْهَمــــة ُْم ـــو ْو ِليــــــِد ي ِْف يـــــ</div>
-<div class="back-link"><a href="#s-index">↑ الفهرس</a></div>
+<div class="back-link"><a href="#s-index">📖 العودة للفهرس</a></div>
 </section>
 <section id="s-60" class="snap-section">
-<h2>مقطع 60</h2>
+<h2>العــــــــــــو دة مـــــــو يــــــا آه</h2>
 <div class="lyrics">العَــــــــــــْو َدة ْمُـــــــو يَــــــا آه
 ؟ ُْو ْح ْج بَــــــا ْْعُيو ِش ي آَو ا َْعْنَد
 * * * *
@@ -2394,10 +2395,10 @@ footer a{color:var(--accent);text-decoration:none}
 الّْس ِم َّيـــة َْعَلـىِ زيـــ الَّلــــة الَّلـــة الِّنَّيـــــــة
 الَح ْض َرة ِْغ ي َم اْبغَـا ْالَمْج ُد و ُْو َها
 لبطانة</div>
-<div class="back-link"><a href="#s-index">↑ الفهرس</a></div>
+<div class="back-link"><a href="#s-index">📖 العودة للفهرس</a></div>
 </section>
 <section id="s-61" class="snap-section">
-<h2>مقطع 61</h2>
+<h2>الحجر گلوب يا المعبود الصنك عبيد</h2>
 <div class="lyrics">الحجر گلوب يا المعبود الصنك عبيد
 لغدر ب مليانة طايشة گلوب
 المنكر وها . . . الحق ها . . . لقبور سلسلتو
@@ -2420,10 +2421,10 @@ footer a{color:var(--accent);text-decoration:none}
 يــا غـــــادا فيــــن عــذبــنــي خــوتـــي حــــال
 دنيــــــا
 يــا غـــــادا فيــــن مرتــنـــي خـــوتـــي حــــال</div>
-<div class="back-link"><a href="#s-index">↑ الفهرس</a></div>
+<div class="back-link"><a href="#s-index">📖 العودة للفهرس</a></div>
 </section>
 <section id="s-62" class="snap-section">
-<h2>مقطع 62</h2>
+<h2>جـــيـبـــــــوا الــبــيـــــضــــا الـطيــــــور</h2>
 <div class="lyrics">دنيــــــا
 * * * *
 جـــيـبـــــــوا الــبــيـــــضــــا الـطيــــــور
@@ -2450,10 +2451,10 @@ footer a{color:var(--accent);text-decoration:none}
 عليه َض اعت ْْيـخَـَّلــ مَـا َح ـْلـَفـة ْْح ـَلـ
 الْت ُبوِريَدة
 َْش ا َْعْو ُد ُْفو ْعَـــَّال كـان الـبـارح غـيـر</div>
-<div class="back-link"><a href="#s-index">↑ الفهرس</a></div>
+<div class="back-link"><a href="#s-index">📖 العودة للفهرس</a></div>
 </section>
 <section id="s-63" class="snap-section">
-<h2>مقطع 63</h2>
+<h2>بالقــاعـدة شي كل كا القدام وخ ط و ة اللو خطوة</h2>
 <div class="lyrics">ْاللجَـا
 بالقــاعـدة شي كل َْكا القدام وَخ ْط َو ة ْالُّلو خطوة
 ْْد يَـا ِك هـي مـا حرير يده ْ  الَّس ْرَبة َْكاَن
@@ -2475,10 +2476,10 @@ footer a{color:var(--accent);text-decoration:none}
 ْْص َهايْــــ يفــــوز مــــا قسمــــا
 َْكهَّـــــــا
 ْْم كَــــا ُْك ْ  َْم ْبُيو وال َْم ُج و وال</div>
-<div class="back-link"><a href="#s-index">↑ الفهرس</a></div>
+<div class="back-link"><a href="#s-index">📖 العودة للفهرس</a></div>
 </section>
 <section id="s-64" class="snap-section">
-<h2>مقطع 64</h2>
+<h2>العدوان وطول الغربة طول ...فا يا ح يفا يا</h2>
 <div class="lyrics">* * * *
 العدوان وطول الغربة طول ...َفا َيا َح ْيَفا َيا
 المسجـونــة لمدن . . . ومليليــة سبتــة يا
@@ -2497,10 +2498,10 @@ footer a{color:var(--accent);text-decoration:none}
 يــــتــالوح أرضي في السالم عالم
 ارسامــــي هدمتني الجهل بسالسل
 مسمارك غرزتي راك الظلم بنسور</div>
-<div class="back-link"><a href="#s-index">↑ الفهرس</a></div>
+<div class="back-link"><a href="#s-index">📖 العودة للفهرس</a></div>
 </section>
 <section id="s-65" class="snap-section">
-<h2>مقطع 65</h2>
+<h2>ســـحــــابـــــي م كح خوتي عذاب</h2>
 <div class="lyrics">ســـحــــابـــــي ْْم ْكّْح خوتي عذاب
 لـصـــــالح درتي ما بنادم يا يكفاك
 ْلـــجَـــــاِم ــــي سباب وشمال يمين
@@ -2521,10 +2522,10 @@ footer a{color:var(--accent);text-decoration:none}
 ْْعَرا ْْم بد ال الدنيا ف والطماع
 صفيناها . . . لعيون مخوضة الدنيا
 اْرِويَناْها . . . لعقول منكدة الدنيا</div>
-<div class="back-link"><a href="#s-index">↑ الفهرس</a></div>
+<div class="back-link"><a href="#s-index">📖 العودة للفهرس</a></div>
 </section>
 <section id="s-66" class="snap-section">
-<h2>مقطع 66</h2>
+<h2>ط بي ترج م وكة كا ول</h2>
 <div class="lyrics">ْْط ِبي ْْتْرْج ُم وَكة َْكا ْوَل
 َْح َّج ا َْيْرَج ْالّض ْـْب حتى
 * * * *
@@ -2549,10 +2550,10 @@ footer a{color:var(--accent);text-decoration:none}
 شــهــــادة الزمــــــان ف ولـحــــــالل لبيض اللون
 ُو َعَلى العربي العــربــي يـــا العـــربــي
 ْْم َح اْيــنُــــ</div>
-<div class="back-link"><a href="#s-index">↑ الفهرس</a></div>
+<div class="back-link"><a href="#s-index">📖 العودة للفهرس</a></div>
 </section>
 <section id="s-67" class="snap-section">
-<h2>مقطع 67</h2>
+<h2>فاينــــ ش غ ل و ايلـــي</h2>
 <div class="lyrics">* * * *
 َْفاْينُــــ ْْش ْغ ْل َو اْيلِـــي
 فاينــــه حقك وايلـــي
@@ -2624,10 +2625,10 @@ footer a{color:var(--accent);text-decoration:none}
 گطـــــران ولى موسم كان ميـــريكـــــــان يــا عامــك
 أعجبني
 يعجبني لم</div>
-<div class="back-link"><a href="#s-index">↑ الفهرس</a></div>
+<div class="back-link"><a href="#s-index">📖 العودة للفهرس</a></div>
 </section>
 <section id="s-68" class="snap-section">
-<h2>مقطع 68</h2>
+<h2>و اقفا ج وبى ص ي د و النبي واصحاب</h2>
 <div class="lyrics">َْو اْقَفا ُج وَبى ْص ْي ُد و النبي واصحاب
 الرحمان عدو دليل كافر لحقو
 حضار يا جملة بالسالم لو نعتو
@@ -2753,10 +2754,10 @@ NASS AL GHIWANE
 زادي وكون عوني كون خـيـي يـا خـيــي
 زادي وكون معايا كون خـيـي يـا خـيــي
 طويلة األيام راه خـيـي يـا خـيــي</div>
-<div class="back-link"><a href="#s-index">↑ الفهرس</a></div>
+<div class="back-link"><a href="#s-index">📖 العودة للفهرس</a></div>
 </section>
 <section id="s-69" class="snap-section">
-<h2>مقطع 69</h2>
+<h2>الغيوان ناس أغاني </h2>
 <div class="lyrics">الغيوان ناس أغاني »
 الغيوان ناس أغاني أجمل  »
 الغيوان ناس أغاني أجمل إليكم »
@@ -2766,7 +2767,7 @@ NASS AL GHIWANE
 المنتدى هذا في المواضيع على الرد التستطيع
 الى انتقل منتدى اختر :الى انتقل
 آخر | مخالف محتوى عن التبليغ | المساعدة و للدعم مجاني منتدى | منتدى انشئ | phpBB©</div>
-<div class="back-link"><a href="#s-index">↑ الفهرس</a></div>
+<div class="back-link"><a href="#s-index">📖 العودة للفهرس</a></div>
 </section>
 <footer>
 <p>تحويل من PDF إلى HTML • كلمات أغاني: ناس الغيوان</p>
