@@ -12,7 +12,6 @@
             --bg: #fcf9f2;
             --surface: #ffffff;
             --text: #2c2416;
-            --text-light: #6b5e4a;
             --primary: #8b5a2b;
             --accent: #c89b3c;
             --accent-light: #f0e4cc;
@@ -20,270 +19,188 @@
             --shadow: 0 4px 12px rgba(0,0,0,0.05);
             --radius: 10px;
         }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: 'Tajawal', 'Amiri', 'Scheherazade New', serif;
+            font-family: 'Tajawal', 'Amiri', serif;
             background: var(--bg);
             color: var(--text);
             line-height: 1.9;
             font-size: 18px;
+            padding: 0;
         }
-
         header {
-            background: linear-gradient(135deg, #1e1a13 0%, #3a2f20 100%);
+            background: linear-gradient(135deg, #1e1a13, #3a2f20);
             color: #fff;
-            padding: 50px 20px 40px;
+            padding: 30px 16px 24px;
             text-align: center;
             position: relative;
-            overflow: hidden;
         }
-
         header::after {
             content: "";
             position: absolute;
             bottom: 0;
             left: 0;
             right: 0;
-            height: 4px;
+            height: 3px;
             background: var(--accent);
         }
+        header h1 { font-family: 'Amiri', serif; font-size: 2.2rem; margin-bottom: 6px; }
+        header p { font-size: 0.95rem; opacity: 0.85; }
+        .subtitle { font-size: 0.8rem; opacity: 0.65; margin-top: 8px; }
 
-        header h1 {
-            font-family: 'Amiri', serif;
-            font-size: 3rem;
-            font-weight: 700;
-            margin-bottom: 8px;
-            letter-spacing: 2px;
-        }
 
-        header p {
-            font-size: 1.1rem;
-            opacity: 0.85;
-            margin-bottom: 6px;
-        }
-
-        .subtitle {
-            font-size: 0.9rem;
-            opacity: 0.65;
-            margin-top: 12px;
-            font-style: italic;
-        }
-
-        nav.toc {
+        /* Sommaire mobile-friendly : pliable */
+        .toc-container {
             background: var(--surface);
             border-bottom: 2px solid var(--accent);
-            padding: 20px 25px;
             position: sticky;
             top: 0;
             z-index: 100;
             box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-            max-height: 80vh;
+        }
+        .toc-toggle {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            padding: 14px 18px;
+            background: var(--surface);
+            border: none;
+            font-family: 'Tajawal', sans-serif;
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--primary);
+            cursor: pointer;
+            border-bottom: 1px solid var(--border);
+            transition: background 0.2s;
+        }
+        .toc-toggle:hover { background: var(--accent-light); }
+        .toc-toggle::after {
+            content: "▼";
+            font-size: 0.8rem;
+            margin-right: 8px;
+            transition: transform 0.3s;
+        }
+        .toc-container.open .toc-toggle::after {
+            transform: rotate(180deg);
+        }
+        nav.toc {
+            display: none;
+            padding: 12px 18px;
+            max-height: 60vh;
             overflow-y: auto;
         }
-
+        .toc-container.open nav.toc {
+            display: block;
+        }
         nav.toc h2 {
             font-family: 'Amiri', serif;
             color: var(--primary);
-            font-size: 1.3rem;
-            margin-bottom: 12px;
-            display: flex;
-            align-items: center;
-            gap: 8px;
+            font-size: 1.1rem;
+            margin-bottom: 10px;
         }
-
         nav.toc ol {
             list-style: none;
-            padding-right: 0;
+            padding: 0;
             display: flex;
             flex-wrap: wrap;
-            gap: 8px;
+            gap: 6px;
         }
-
-        nav.toc li {
-            margin: 0;
-        }
-
         nav.toc a {
             display: inline-block;
             background: var(--accent-light);
             color: var(--primary);
             text-decoration: none;
-            padding: 6px 14px;
+            padding: 5px 12px;
             border-radius: 20px;
-            font-size: 0.95rem;
-            font-weight: 500;
-            transition: all 0.2s ease;
+            font-size: 0.9rem;
             border: 1px solid transparent;
         }
+        nav.toc a:hover { background: var(--primary); color: #fff; }
 
-        nav.toc a:hover {
-            background: var(--primary);
-            color: #fff;
-            border-color: var(--primary);
-        }
 
         main {
-            max-width: 860px;
-            margin: 40px auto;
-            padding: 0 20px;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 16px;
         }
-
         section {
             background: var(--surface);
             border-radius: var(--radius);
-            padding: 30px 28px;
-            margin-bottom: 30px;
+            padding: 24px 18px;
+            margin-bottom: 24px;
             box-shadow: var(--shadow);
             border: 1px solid var(--border);
-            transition: transform 0.2s;
         }
-
-        section:hover {
-            transform: translateY(-2px);
-        }
-
         section h2 {
             font-family: 'Amiri', serif;
             color: var(--primary);
-            font-size: 1.8rem;
+            font-size: 1.6rem;
             border-bottom: 2px solid var(--accent);
-            padding-bottom: 12px;
-            margin-bottom: 20px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
+            padding-bottom: 10px;
+            margin-bottom: 16px;
         }
-
-        section h2::before {
-            content: "🎵";
-            font-size: 1.5rem;
-        }
-
         .song {
             font-size: 1.2rem;
             line-height: 2.4;
-            padding: 8px 0;
             white-space: pre-line;
+            padding: 6px 0;
         }
-
         .separator {
             text-align: center;
             color: var(--accent);
-            font-size: 2rem;
-            margin: 24px 0;
-            letter-spacing: 10px;
-            user-select: none;
+            font-size: 1.8rem;
+            margin: 20px 0;
+            letter-spacing: 8px;
         }
-
         .comment {
             background: #fbf7f0;
             border-right: 4px solid var(--accent);
-            padding: 16px 20px;
-            margin: 16px 0;
+            padding: 14px 16px;
+            margin: 14px 0;
             border-radius: 0 8px 8px 0;
-            box-shadow: 0 1px 4px rgba(0,0,0,0.03);
         }
-
-        .comment .author {
-            font-weight: 700;
-            color: var(--primary);
-            font-size: 1.05rem;
-        }
-
-        .comment .meta {
-            font-size: 0.8rem;
-            color: #8b7a62;
-            margin: 6px 0;
-        }
-
-        .comment p {
-            margin-top: 8px;
-            line-height: 1.8;
-        }
-
+        .comment .author { font-weight: 700; color: var(--primary); }
+        .comment .meta { font-size: 0.75rem; color: #8b7a62; margin: 4px 0; }
         .forum-info {
             background: #fcf9f2;
             border: 1px solid var(--border);
-            padding: 20px;
+            padding: 16px;
             border-radius: var(--radius);
-            font-size: 0.95rem;
+            font-size: 0.9rem;
             color: #5f5543;
-            margin-top: 20px;
+            margin-top: 16px;
         }
-
-        .forum-info ul {
-            padding-right: 20px;
-            margin: 10px 0;
-        }
-
         .img-desc {
             background: #f0f4f8;
             border-right: 4px solid #7fa3b5;
-            padding: 12px 16px;
-            margin: 20px 0;
+            padding: 10px 14px;
+            margin: 16px 0;
             border-radius: 0 6px 6px 0;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             color: #2d3e4e;
-            display: flex;
-            align-items: flex-start;
-            gap: 10px;
         }
-
-        .img-desc::before {
-            content: "🖼️";
-            font-size: 1.5rem;
-            flex-shrink: 0;
-        }
-
         footer {
             background: #1e1a13;
             color: #b3a68b;
             text-align: center;
-            padding: 30px 20px;
-            margin-top: 60px;
-            font-size: 0.9rem;
+            padding: 24px 16px;
+            margin-top: 40px;
             border-top: 3px solid var(--accent);
+            font-size: 0.85rem;
         }
+        footer a { color: var(--accent); text-decoration: none; }
 
-        footer a {
-            color: var(--accent);
-            text-decoration: none;
-            font-weight: 500;
-        }
 
-        footer a:hover {
-            text-decoration: underline;
-        }
-
-        @media (max-width: 700px) {
-            header h1 {
-                font-size: 2rem;
-            }
-            main {
-                padding: 0 12px;
-                margin: 20px auto;
-            }
-            section {
-                padding: 20px 16px;
-            }
-            .song {
-                font-size: 1rem;
-                line-height: 2.2;
-            }
-            nav.toc ol {
-                flex-direction: column;
-                gap: 4px;
-            }
+        @media (max-width: 600px) {
+            header h1 { font-size: 1.8rem; }
+            .song { font-size: 1.05rem; line-height: 2.2; }
+            nav.toc ol { flex-direction: column; gap: 4px; }
         }
     </style>
 </head>
 <body>
+
 
 <header>
     <h1>كلمات أغاني: ناس الغيوان</h1>
@@ -291,49 +208,57 @@
     <p class="subtitle">مجموعة مختارة من أشعار الفرقة الأسطورية</p>
 </header>
 
-<nav class="toc" id="toc">
-    <h2>📖 الفهرس</h2>
-    <ol>
-        <li><a href="#s-intro">مقدمة المنتدى</a></li>
-        <li><a href="#s-song1">الأهزاز — الهم زا</a></li>
-        <li><a href="#s-song2">باب الخاوا</a></li>
-        <li><a href="#s-song3">العباد على هذا</a></li>
-        <li><a href="#s-song4">الرغاية</a></li>
-        <li><a href="#s-song5">واو نوح</a></li>
-        <li><a href="#s-song6">الخاوة حزان شلى</a></li>
-        <li><a href="#s-song7">تعالي ليك نعيد</a></li>
-        <li><a href="#s-song8">صفوفنا</a></li>
-        <li><a href="#s-song9">الداخِل يا بحر</a></li>
-        <li><a href="#s-song10">الخو يا يعشاق</a></li>
-        <li><a href="#s-song11">الغربان العربان</a></li>
-        <li><a href="#s-song12">الماضي يبكي</a></li>
-        <li><a href="#s-song13">ناس الغيوان — ناظمي</a></li>
-        <li><a href="#s-song14">ناس الغيوان — ند</a></li>
-        <li><a href="#s-song15">أنا نرجاك</a></li>
-        <li><a href="#s-song16">بالك رد</a></li>
-        <li><a href="#s-song17">مواله أنا نقول</a></li>
-        <li><a href="#s-song18">دوم الحق</a></li>
-        <li><a href="#s-song19">الخير صباح</a></li>
-        <li><a href="#s-song20">سامحوني</a></li>
-        <li><a href="#s-comments">تعليقات الأعضاء</a></li>
-        <li><a href="#s-info">معلومات إضافية</a></li>
-    </ol>
-</nav>
+
+<!-- Sommaire repliable -->
+<div class="toc-container" id="tocContainer">
+    <button class="toc-toggle" id="tocToggle">📖 الفهرس</button>
+    <nav class="toc" id="tocNav">
+        <h2>قائمة الأغاني</h2>
+        <ol>
+            <li><a href="#s-intro">مقدمة المنتدى</a></li>
+            <li><a href="#s-song1">الأهزاز — الهم زا</a></li>
+            <li><a href="#s-song2">باب الخاوا</a></li>
+            <li><a href="#s-song3">العباد على هذا</a></li>
+            <li><a href="#s-song4">الرغاية</a></li>
+            <li><a href="#s-song5">واو نوح</a></li>
+            <li><a href="#s-song6">الخاوة حزان شلى</a></li>
+            <li><a href="#s-song7">تعالي ليك نعيد</a></li>
+            <li><a href="#s-song8">صفوفنا</a></li>
+            <li><a href="#s-song9">الداخِل يا بحر</a></li>
+            <li><a href="#s-song10">الخو يا يعشاق</a></li>
+            <li><a href="#s-song11">الغربان العربان</a></li>
+            <li><a href="#s-song12">الماضي يبكي</a></li>
+            <li><a href="#s-song13">ناس الغيوان — ناظمي</a></li>
+            <li><a href="#s-song14">ناس الغيوان — ند</a></li>
+            <li><a href="#s-song15">أنا نرجاك</a></li>
+            <li><a href="#s-song16">بالك رد</a></li>
+            <li><a href="#s-song17">مواله أنا نقول</a></li>
+            <li><a href="#s-song18">دوم الحق</a></li>
+            <li><a href="#s-song19">الخير صباح</a></li>
+            <li><a href="#s-song20">سامحوني</a></li>
+            <li><a href="#s-comments">تعليقات الأعضاء</a></li>
+            <li><a href="#s-info">معلومات إضافية</a></li>
+        </ol>
+    </nav>
+</div>
+
 
 <main>
 
+
     <div class="img-desc">
-        <span>الصفحة الأولى تحتوي على شعار "موقع الظاهرة الغيوانية"، ورابط "منتدى ناس الغيوان"، وصورة شخصية للمدير العام "بوح الغيوان" (83×82 بكسل)، وبانر إعلاني (728×90 بكسل)، وأيقونات فيسبوك وتويتر ويوتيوب.</span>
+        🖼️ الصفحة الأولى تحتوي على شعار "موقع الظاهرة الغيوانية"، ورابط المنتدى، وصورة المدير "بوح الغيوان"، وبانر إعلاني، وأيقونات فيسبوك وتويتر ويوتيوب.
     </div>
+
 
     <section id="s-intro">
         <h2>معلومات المنتدى</h2>
         <p><strong>الموضوع:</strong> كلمات أغاني: ناس الغيوان</p>
         <p><strong>الكاتب:</strong> بوح الغيوان — المدير العام</p>
         <p><strong>تاريخ النشر:</strong> الجمعة 19 مارس 2009</p>
-        <p><strong>عدد الصفحات:</strong> 129 | <strong>الرسائل:</strong> 1308 | <strong>نقاط:</strong> 1402</p>
         <p>مجموعة <strong>ناس الغيوان</strong> هي فرقة مغربية أسطورية تأسست في الستينيات، تمزج بين الإيقاعات التقليدية والكلمات العميقة المليئة بالحكمة الشعبية والرمزية.</p>
     </section>
+
 
     <section id="s-song1">
         <h2>الأهزاز — الهم زا</h2>
@@ -351,6 +276,7 @@
 الحال عين من غمزة وال</div>
     </section>
 
+
     <section id="s-song2">
         <h2>باب الخاوا</h2>
         <div class="song">إفـادة بقـات مـا ليـك هـو هـا
@@ -362,6 +288,7 @@
 قومـان معري ليـك هـو هـا
 ليـام يـا آه ليـك هـو هـا</div>
     </section>
+
 
     <section id="s-song3">
         <h2>العباد على هذا</h2>
@@ -377,6 +304,7 @@
 موالي ربـــي يـا اهلل . . . لعفو</div>
     </section>
 
+
     <section id="s-song4">
         <h2>الرغاية</h2>
         <div class="song">تتمارى خارف صيف مثل مهمومة نغمة
@@ -391,6 +319,7 @@
 ْْج ْرُبو
 فيها يده يدير . . . باردة العصيدة ذا گال واللي</div>
     </section>
+
 
     <section id="s-song5">
         <h2>واو نوح</h2>
@@ -419,12 +348,14 @@
 وحــدي َْلْه ــَو ا وايـــا</div>
     </section>
 
+
     <section id="s-song6">
         <h2>الخاوة حزان شلى</h2>
         <div class="song">لغدر ب توشمات الخاوة حزان شلى
 تــمـيــل العــافـيـة وأمـــواج والـلـيــل
 الظلـــم ْأْكثْـــْوالْس ـــَال المــان بقــى مـا ُْو لْــقْــتِــيــ</div>
     </section>
+
 
     <section id="s-song7">
         <h2>تعالي ليك نعيد</h2>
@@ -445,6 +376,7 @@
 الــريــح وهــبـــوب</div>
     </section>
 
+
     <section id="s-song8">
         <h2>صفوفنا</h2>
         <div class="song">صــفــوفــنـــا ف لغـنـــام تــوزاع وزعونـــا
@@ -460,6 +392,7 @@
 الـتــعــطـــال
 لخـــالل دارو عقولنـــا ف</div>
     </section>
+
 
     <section id="s-song9">
         <h2>الداخل يا بحر</h2>
@@ -480,6 +413,7 @@
 الراحة فيها ومنع . . .خيم ولبهيم
 تخمم فيه الزمك</div>
     </section>
+
 
     <section id="s-song10">
         <h2>الخو يا يعشاق</h2>
@@ -506,6 +440,7 @@
 تـبـغـيك</div>
     </section>
 
+
     <section id="s-song11">
         <h2>الغربان العربان</h2>
         <div class="song">أمة يـا عـليـــك تحــوم
@@ -518,6 +453,7 @@
 يــا يــا يــا
 َتْغـــَد الَّد ْنَيــا</div>
     </section>
+
 
     <section id="s-song12">
         <h2>الماضي يبكي</h2>
@@ -535,6 +471,7 @@
 الزنقة ف بنادم</div>
     </section>
 
+
     <section id="s-song13">
         <h2>ناس الغيوان — ناظمي</h2>
         <div class="song">مَـــالِـــ يَــا ْيــلِــي َيــا آْيلِـــي ْبــْه ــبَـاِلــي ْم ْح ْز ْظ ِم ي أَنا ْْنگوي
@@ -549,6 +486,7 @@
 عل مسكون وحدي هايم مشيت
 الغوان ناس — NASS AL GHIWANE</div>
     </section>
+
 
     <section id="s-song14">
         <h2>ناس الغيوان — ند / قصة المرحومة ديك العگوز</h2>
@@ -569,6 +507,7 @@
 محمد موالي اصحاب هما حنا</div>
     </section>
 
+
     <section id="s-song15">
         <h2>أنا نرجاك</h2>
         <div class="song">الطير يغيب
@@ -583,8 +522,9 @@
 العــربـــي يـــا واه الــعــربـــي خــويـــا
 العالـ بهــاد أنــا بغــيــت آش
 حيــانــا وا األيام حيــانــا وا
-الگـــدا وزيد الفوضى غير نــظــام ال وا لــيــام حيــانـــا وا</div>
+الگـــدا وزيد الفوضى غير نــظــام ال وا لــيــام حيـــانـــا وا</div>
     </section>
+
 
     <section id="s-song16">
         <h2>بالك رد</h2>
@@ -603,11 +543,13 @@
 النـــاس معشر يا بالك رد</div>
     </section>
 
+
     <section id="s-song17">
         <h2>مواله أنا نقول</h2>
         <div class="song">مواله أنا نقول وما الكالم نبدا
 لهيه كع السامعين يا التسليم طالب</div>
     </section>
+
 
     <section id="s-song18">
         <h2>دوم الحق</h2>
@@ -620,6 +562,7 @@
 بذبانة شربناه سيدي يا احنا ها</div>
     </section>
 
+
     <section id="s-song19">
         <h2>الخير صباح</h2>
         <div class="song">. . . الخير صباح
@@ -630,6 +573,7 @@
 كثيرة محاين وجوه يا
 الظالمة القوم يا رجعة بال مشية</div>
     </section>
+
 
     <section id="s-song20">
         <h2>سامحوني</h2>
@@ -652,107 +596,63 @@
 سامحوني</div>
     </section>
 
+
     <section id="s-comments">
         <h2>تعليقات الأعضاء</h2>
-
-        <div class="comment">
-            <div class="author">safae — عضو نشيط</div>
-            <div class="meta">204 رسائل • 238 نقطة • الثلاثاء 23 مارس 2009</div>
-            <p>جدا كبير مجهود بوح يا عليك اهلل تبارك<br>خير ألف اهلل جزاك<br>محبوبة غيوانية دمت</p>
-        </div>
-
-        <div class="comment">
-            <div class="author">عام مشرف</div>
-            <div class="meta">225 رسائل • 292 نقطة • الثلاثاء 23 مارس 2009</div>
-            <p>عليك اهلل تبارك<br>والمجهود على مشكوووووورة<br>و الغيوان ناس أغاني كلمات من الكبيرة الموسوعة<br>وتحياتي تقديري</p>
-        </div>
-
-        <div class="comment">
-            <div class="author">الغيوان قنديل — عضو نشيط</div>
-            <div class="meta">143 رسائل • 156 نقطة • الأربعاء 24 مارس 2009</div>
-            <p>2793 الغيوان ناس:أغاني كلمات 362793 الغيوان ناس:أغاني كلمات</p>
-        </div>
-
-        <div class="comment">
-            <div class="author">البالد على غريب — عضو جديد</div>
-            <div class="meta">98 رسائل • 107 نقطة • الجمعة 26 مارس 2009</div>
-            <p>لبنى أختي يا عليك اهلل تبارك<br>التقدير يستحق مجهود<br>الغيوان ناس أغاني كلمات على جزيال مشكووووورة</p>
-        </div>
-
-        <div class="comment">
-            <div class="author">الغيوان نسر — عضو جديد</div>
-            <div class="meta">67 رسائل • 99 نقطة • الإثنين 5 أبريل 2009</div>
-            <p>الغيو لالغنية المتواصل و الخالص الوفاء هدا وعلى الجبارة مجهوداتك على جزيال شكرا</p>
-        </div>
-
-        <div class="comment">
-            <div class="author">بوح الغيوان — المدير العام</div>
-            <div class="meta">1308 رسائل • 46 سنة • 9 تصويت • 1402 نقطة</div>
-            <p>فيكم اهلل بارك<br>العطر والمرور الطيبة الردود على جزيال وشكرا<br>ومحبة بود دمتم</p>
-        </div>
-
-        <div class="comment">
-            <div class="author">gembri-or</div>
-            <div class="meta">2 رسائل • 4 نقاط • 18 يناير 2010</div>
-            <p>الصادق الكالم على سالم يا</p>
-        </div>
-
-        <div class="comment">
-            <div class="author">otmani</div>
-            <div class="meta">3 رسائل • 3 نقاط • الإثنين 30 مايو 2011</div>
-            <p>ناس محبي و عشاق اجل من به قمت الدي المجهود هذا على شكر الف</p>
-        </div>
-
-        <div class="comment">
-            <div class="author">fouad ayad</div>
-            <div class="meta">1 رسالة • 1 نقطة • الإثنين 13 أغسطس 2012</div>
-            <p>merci</p>
-        </div>
-
-        <div class="comment">
-            <div class="author">ABDALLAH</div>
-            <div class="meta">2 رسائل • 2 نقطة • الأحد 24 أغسطس 2014</div>
-            <p>MERCI</p>
-        </div>
+        <div class="comment"><div class="author">safae</div><div class="meta">204 رسائل • 238 نقطة</div><p>جدا كبير مجهود بوح يا عليك اهلل تبارك<br>خير ألف اهلل جزاك</p></div>
+        <div class="comment"><div class="author">عام مشرف</div><div class="meta">225 رسائل • 292 نقطة</div><p>عليك اهلل تبارك والمجهود على مشكوووووورة</p></div>
+        <div class="comment"><div class="author">الغيوان قنديل</div><div class="meta">143 رسائل • 156 نقطة</div><p>2793 الغيوان ناس:أغاني كلمات</p></div>
+        <div class="comment"><div class="author">البالد على غريب</div><div class="meta">98 رسائل • 107 نقطة</div><p>لبنى أختي يا عليك اهلل تبارك</p></div>
+        <div class="comment"><div class="author">الغيوان نسر</div><div class="meta">67 رسائل • 99 نقطة</div><p>الغيو لالغنية المتواصل و الخالص الوفاء هدا</p></div>
+        <div class="comment"><div class="author">بوح الغيوان</div><div class="meta">1308 رسائل • 1402 نقطة</div><p>فيكم اهلل بارك العطر والمرور الطيبة</p></div>
+        <div class="comment"><div class="author">gembri-or</div><p>الصادق الكالم على سالم يا</p></div>
+        <div class="comment"><div class="author">otmani</div><p>ناس محبي و عشاق اجل من به قمت الدي المجهود هذا على شكر الف</p></div>
+        <div class="comment"><div class="author">fouad ayad</div><p>merci</p></div>
+        <div class="comment"><div class="author">ABDALLAH</div><p>MERCI</p></div>
     </section>
+
 
     <section id="s-info">
         <h2>معلومات إضافية</h2>
-
         <div class="forum-info">
             <strong>وصف الصور في المستند الأصلي:</strong>
-            <ul>
-                <li>الصفحة الأولى: شعار "موقع الظاهرة الغيوانية"، بانر إعلاني 728×90، صورة شخصية للمدير (83×82)، أيقونات التواصل.</li>
-                <li>الصفحات الداخلية: أزرار التنقل (43×31)، صور مصغرة (150×82)، صور شخصية للأعضاء (48×48).</li>
-                <li>صفحات التعليقات: صور رمزية للأعضاء (128×128)، صور ملف شخصي (150×100، 133×97).</li>
-                <li>باقي الصور: نقاط تتبع شفافة 1×1، أيقونات واجهة المنتدى.</li>
-            </ul>
+            <ul><li>الصفحة الأولى: شعار المنتدى، بانر إعلاني، صورة المدير، أيقونات التواصل.</li>
+            <li>الصفحات الداخلية: أزرار تنقل، صور مصغرة، صور شخصية.</li></ul>
         </div>
-
         <div class="forum-info">
-            <strong>إحصائيات:</strong>
-            <ul>
-                <li>إجمالي الصفحات: 129</li>
-                <li>الصور المضمنة: 132</li>
-                <li>الأغاني المفهرسة: 20+</li>
-                <li>عدد المعلقين: 10</li>
-                <li>الفترة: من مارس 2009 إلى أغسطس 2014</li>
-            </ul>
-        </div>
-
-        <div class="forum-info">
-            <strong>ملاحظات تقنية:</strong>
-            <p>تم استخراج النص من PDF أصلي (Skia/PDF m143). بعض الأحرف قد لا تظهر بشكل مثالي بسبب قيود الترميز. النص بالدارجة المغربية مع فصحى. كلمات الأغاني لفرقة <strong>ناس الغيوان</strong> الأسطورية.</p>
+            <strong>إحصائيات:</strong> 129 صفحة | 132 صورة | 20+ أغنية | 10 معلقين.
         </div>
     </section>
-
 </main>
+
 
 <footer>
     <p>تحويل من PDF إلى HTML — كلمات أغاني: ناس الغيوان</p>
-    <p style="margin-top:8px;">المصدر: منتديات ناس الغيوان • phpBB</p>
-    <p style="margin-top:12px;"><a href="#toc">↑ العودة إلى الفهرس</a></p>
+    <p><a href="#" onclick="document.getElementById('tocContainer').classList.toggle('open'); return false;">↑ الفهرس</a></p>
 </footer>
+
+
+<script>
+    // Gestion du panneau sommaire pliable
+    const container = document.getElementById('tocContainer');
+    const toggle = document.getElementById('tocToggle');
+    const nav = document.getElementById('tocNav');
+    const links = nav.querySelectorAll('a');
+
+
+    toggle.addEventListener('click', () => {
+        container.classList.toggle('open');
+    });
+
+
+    // Fermer le sommaire quand on clique sur un lien (mobile)
+    links.forEach(link => {
+        link.addEventListener('click', () => {
+            container.classList.remove('open');
+        });
+    });
+</script>
+
 
 </body>
 </html>
